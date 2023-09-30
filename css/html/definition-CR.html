@@ -20,23 +20,23 @@ body{
 	padding-top: 10px;
 	padding-right: 5px;
 	padding-left: 5px;
-	padding-bottom: 10px; /* 内边距，用于创建间距 */
+	padding-bottom: 10px; 
 	height: 350px;
 	border: 2px solid #375D80;
 	margin-left: 5px;
 	margin-right: 2px;
-	overflow-y: auto; /* 显示垂直滚动条 */
+	overflow-y: auto;
 	overflow-x: auto;
 }
 
 #menu_df a {
-	display: block; /* 将链接元素转换为块级元素，以占据整个宽度 */
+	display: block; 
 	padding-top:10px;
 	padding-left: 5px;
-	padding-bottom: 5px; /* 链接内边距 */
-	font-size: 15px; /* 字体大小 */
-	text-decoration: none; /* 移除下划线 */
-	color: black; /* 链接文本颜色 */
+	padding-bottom: 5px;
+	font-size: 15px;
+	text-decoration: none;
+	color: black; 
 	font-family: Verdana, Arial, sans-serif;
 	line-height:inherit;
 	z-index: 100;
@@ -49,10 +49,9 @@ body{
 <body>
 <p class="h1_df">CCycDB-Definition </p>
 <hr>
-<!--插入一个表格吧，介绍情况-->
 <!-- 左侧索引 -->
 <div id="menu_df">
-	<a href="https://jiayin-zhou.github.io/" style="text-align: center；"><strong>HOME</strong></a>
+	<a href="https://ccycdb.github.io/" style="text-align: center；"><strong>HOME</strong></a>
 	<a href="#top" style="color: white;background-color:#3B7197">Carbon Release</a>
 	<a href="#CO" style="font-weight:bold;">CO</a>
 	<a href="#CO2" style="font-weight:bold;">CO2</a>	
@@ -64,20 +63,17 @@ body{
 
 </div>
 
-<!-- 右侧 -->
 <div class="box_df">
-<!-- 1 -->
  <div >
 	<h3>Note:</h3>
 	<p style="margin-top: 0px; margin-bottom: 2px; margin-left: 40px;"><strong>From left to right:</strong></p>
 	<p style="margin-top: 0px;">Gene name; Annotation; KO Orthology;KO Symbol; Name in KEGG; EC-number in Brenda; Enzyme Classes in CAZY; GO Term </p>
  </div>
-<!---->
 <a name="top"></a>
 <div class="level">
   <h3>Cateogory</h3>
   <ul class="ul_level">
-  <!--补充内容-->
+
   <p class ="level1_df">Carbon Relase</p>
   <a name="CO"></a>
 <li class="level2_df optionbox">CO</li>
@@ -105,9 +101,6 @@ body{
 <li class ="level3_df optionbox">Methylotrophic methanogenesis</li> 
 <p class="gene_d4"><i>torC</i>;&nbsp;Trimethylamine-N-oxide reductase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K03532">K03532(torC):trimethylamine-N-oxide reductase (cytochrome c), cytochrome c-type subunit TorC;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG3005">COG3005; </a></p><p class="gene_d4"><i>torD</i>;&nbsp;Trimethylamine-N-oxide reductase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K03533">K03533(torD):TorA specific chaperone;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG3381">COG3381/</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/arCOG01506">arCOG01506; </a></p><p class="gene_d4"><i>mtaB</i>;&nbsp;Coenzyme M methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K04480">K04480(mtaB):methanol---5-hydroxybenzimidazolylcobamide Co-methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.90">2.1.1.90; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0621">COG0621/</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0789">COG0789/</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/arCOG03330">arCOG03330; </a></p><p class="gene_d4"><i>torA</i>;&nbsp;Trimethylamine-N-oxide reductase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K07811">K07811(torA):trimethylamine-N-oxide reductase (cytochrome c);</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=1.7.2.3">1.7.2.3; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0243">COG0243; </a></p><p class="gene_d4"><i>torZ</i>;&nbsp;Trimethylamine-N-oxide reductase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K07812">K07812(torZ):trimethylamine-N-oxide reductase (cytochrome c);</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=1.7.2.3">1.7.2.3; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0243">COG0243; </a></p><p class="gene_d4"><i>torY</i>;&nbsp;Trimethylamine-N-oxide reductase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K07821">K07821(torY):trimethylamine-N-oxide reductase (cytochrome c), cytochrome c-type subunit TorY;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG3005">COG3005; </a></p><p class="gene_d4"><i>mtsA</i>;&nbsp;Methylated-thiol--coenzyme m methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K11704">K11704(mtsA):iron/zinc/manganese/copper transport system substrate-binding protein;</a><a class="linkkegg" href="https://www.kegg.jp/entry/K16954">K16954(mtsA):methylthiol:coenzyme M methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=">/</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.251">2.1.1.251; </a></p><p class="gene_d4"><i>mtsB</i>;&nbsp;Methylated-thiol--coenzyme m methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K11706">K11706(mtsB):iron/zinc/manganese/copper transport system ATP-binding protein;</a><a class="linkkegg" href="https://www.kegg.jp/entry/K16955">K16955(mtsB):methylated-thiol--corrinoid protein;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG1108">COG1108/</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG1121">COG1121; </a></p><p class="gene_d4"><i>mtaA</i>;&nbsp;Coenzyme M methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K14080">K14080(mtaA):[methyl-Co(III) methanol-specific corrinoid protein:coenzyme M methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.246">2.1.1.246; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG2091">COG2091; </a></p><p class="gene_d4"><i>mtaC</i>;&nbsp;Coenzyme M methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K14081">K14081(mtaC):methanol corrinoid protein;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0789">COG0789; </a></p><p class="gene_d4"><i>mtbA</i>;&nbsp;Dimethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K14082">K14082(mtbA):[methyl-Co(III) methylamine-specific corrinoid protein:coenzyme M methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.247">2.1.1.247; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0477">COG0477; </a></p><p class="gene_d4"><i>mttB</i>;&nbsp;Trimethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K14083">K14083(mttB):trimethylamine---corrinoid protein Co-methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.250">2.1.1.250; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/2CVK7">2CVK7; </a></p><p class="gene_d4"><i>mttC</i>;&nbsp;Trimethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K14084">K14084(mttC):trimethylamine corrinoid protein;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG0084">COG0084; </a></p><p class="gene_d4"><i>mtmC</i>;&nbsp;Monomethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K15962">K15962(mtmC):D-mycarose 3-C-methyltransferase;</a><a class="linkkegg" href="https://www.kegg.jp/entry/K16177">K16177(mtmC):monomethylamine corrinoid protein;</a></p><p class="gene_d4"><i>mtmB</i>;&nbsp;Monomethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K16176">K16176(mtmB):methylamine---corrinoid protein Co-methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.248">2.1.1.248; </a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/arCOG05143">arCOG05143; </a></p><p class="gene_d4"><i>mtbB</i>;&nbsp;Dimethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K16178">K16178(mtbB):dimethylamine---corrinoid protein Co-methyltransferase;</a><a class="linkbrenda" href= "https://www.brenda-enzymes.org/enzyme.php?ecno=2.1.1.249">2.1.1.249; </a></p><p class="gene_d4"><i>mtbC</i>;&nbsp;Dimethylamine methyltransferase;&nbsp;<a class="linkkegg" href="https://www.kegg.jp/entry/K16179">K16179(mtbC):dimethylamine corrinoid protein;</a><a class="linkcog" href="http://eggnog6.embl.de/search/ogs/COG5012">COG5012; </a></p>
 
-  
-
-  <!--内容完毕-->
   </ul>
 </div>
 	
