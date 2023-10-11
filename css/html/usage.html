@@ -8,9 +8,9 @@
 <link rel="stylesheet" type="text/css" href="../df.css"> 
 <style type="text/css">
 h2 {
-    font-size: 26px; 
-    color: #375D80;
-    text-align: left; 
+    font-size: 26px;
+    color: #375D80; 
+    text-align: left;
     margin-left: 45px;
    margin-bottom: 0px;
     padding: 10px;
@@ -19,7 +19,7 @@ h2 {
 h3 {
     font-size: 20px; 
     color: #375D80;
-    text-align: left; 
+    text-align: left;
     margin-left: 45px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -49,6 +49,21 @@ li {
 	margin-top: 0px;
 	line-height: 2;
 }
+.optionbox {
+	background-color: #f2f2f2;
+	width: 80%;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	margin-left: 55px;
+	margin-bottom: 0px;
+	border: 0px solid #ccc; 
+	border-radius: 5px;
+	box-sizing: border-box;
+	overflow-x: auto;
+	height: auto;
+	padding-top: 5px;
+}	
+	
 </style>
 </head>
 
@@ -57,13 +72,13 @@ li {
 	<hr>
     <h2>A guide to analyzing metagenomic data with CCycDB</h2>
 
-
+	
+	<!--  文件类型 -->
    <div>
   	<h3>Step 0. Prepare your files</h3>
-	<p><strong>Input files</strong> supports 3 type of files</p>
-	  
-	  <ul>
-		<li><p style=" margin-left: 5px;"><b>Read-based</b></p></li>
+  	<p><strong>Input files</strong> supports 3 types</p>
+  	<ul>
+	  <li><p style=" margin-left: 5px;"><b>Read-based</b></p></li>
 		<p>Raw reads (clean reads) or Merged Reads (Forward and reverse reads were merged into longer sequences by the program e.g. PEAR)</p>
 	
 		<li><p style=" margin-left: 5px;"><b>Assembly-based</b></p></li>
@@ -74,67 +89,80 @@ li {
 	</ul>
 	</div>
 	
+	<!--  数据库下载 -->
 	<div>
 	<h3>Step 1. Download </h3>
-	  <p><b>1. download database</b></p>
-	  <p>wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1 </p>
-	  <p>OR </p>
-	  <p>The database can be downloaded directly through <a href="https://zenodo.org/record/8324818/" style="color:#375D80; text-decoration: underline;font-weight: bold;"> the website </a> or third-party download tools.</p>
-	  <p><b>2. download scripts </b></p>
-	  <p>git clone https://github.com/ccycdb/CCycDB.PL</p>
+	<p class="optionbox">$ wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1 </p>
+	<p> &nbsp;Alternatively, you can download database directly through <strong><a href="https://zenodo.org/record/8324818/" style="text-decoration:underline ">the website</a></strong> or third-party download tools.</p>
+	<p class="optionbox">$ git clone https://github.com/ccycdb/CCycDB.PL </p>
 	</div>
 	<!--  UASGE -->
 	<div>
 	<h3>Step 2. Annotation </h3>
-	<p class="text"><b>[Command:]</b></p>
-	<p class="text">perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]</p>
+	<p class="text"><strong>Usage:</strong></p>
+	<p class="text">perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]</p>
 	<p class="text"><b>[Options:]</b></p>
 	</div>
 	<!-- 参数 -->
 	<div class="graybox">
 		<table class="table table-hover pt-2">
 			<tbody>
-			  <tr><td class="td-left"><b>-situation</b></td>
+			  <tr><td class="td-left">-situation</td>
 				<td class="td-right">The situation for input files (read-based|assembly-based|tabular)</td>
 			  </tr>
 			  
 			 <tr>
-				<td class="td-left"><b>-wd</b></td>
-				<td class="td-right">Work directory or current directory.  The files downloaded in Step 1  and your fasta/fastq files should be included in this directory.</td>
+				<td class="td-left">-wd</td>
+				<td class="td-right">Work directory.  Ensure that the files downloaded in Step 1  and your input files be included in this directory.</td>
 			  </tr>
 				
 			  <tr>
-				<td class="td-left"><b>-od</b></td>
+				<td class="td-left">-od</td>
 				<td class="td-right">Output file. This directory may or may not exist.</td>
 			  </tr>
 			  <tr>
-				<td class="td-left"><b>-m</b></td>
-				<td class="td-right">Database searching program you plan to use (diamond|usearch|blast)</td>
+				<td class="td-left">-m<br></td>
+				<td class="td-right">Database searching program you plan to use (diamond|usearch|blast).</td>
 			  </tr>
 			  <tr>
-				<td class="td-left"><b>-f</b></td>
-				<td class="td-right">Specify the extensions of your sequence files (fastq, fastq.gz, fasta, fasta.gz, fq, fq.gz, fa, fa.gz) or (faa, fna). <br>Please make sure that the filetype is correct according to the tool selected by -m. <br>E.g., if -m usearch, the filetype supports (fastq|fasta); if -m blast, the filetype supports fasta.</td>
+				<td class="td-left">-f</td>
+				<td class="td-right">Specify the extensions of your sequence files (E.g. fastq, fastq.gz, fasta, fasta.gz, fq, fq.gz, fa, fa.gz) or (faa, fna) or (diamond|usearch|blast). <br>
+				  When using "-situation tablular", -f supports "diamond|usearch|blast". <br>
+Ensure that filetype is support for the tool selected by -m option. <br>
+(E.g., if -m usearch, the supported file types for -f are "fastq|fasta," and for "-m blast," they are "fasta|fa".)<br></td>
 			  </tr>
 			  <tr>
-				<td class="td-left"><b>-s</b></td>
-				<td class="td-right">Sequence type (nucl|prot)</td>
+				<td class="td-left">-s</td>
+				<td class="td-right">(nucl|prot) Sequence type.</td>
 			  </tr>
 			  <tr>
-				<td class="td-left"><b>-tpm</b></td>
-				<td class="td-right">(0|1) (default: 0). "1" need $sample.tpm exist in the work directory</td>
+				<td class="td-left">-tpm</td>
+				<td class="td-right">(0|1) &nbsp;"1" need $sample.tpm exist in the work directory&nbsp;(default: 0).<br>
+"-situation assembly-based" is a prerequisite for this option.</td>
+			  </tr>
+				
+			 <tr>
+				<td class="td-left">-id</td>
+				<td class="td-right">Minimum identity to report an alignment (default: 30).</td>
+			  </tr>
+			  
+			  <tr>
+				<td class="td-left">-e</td>
+				<td class="td-right">Maximum e-value to report alignments (default: 1e-5).</td>
+			  </tr>
+				
+			  <tr>
+				<td class="td-left">-norm</td>
+				<td class="td-right">(0|1) 0: don`t need random sampling; 1: need random sampling.</td>
 			  </tr>
 			  <tr>
-				<td class="td-left"><b>-norm</b></td>
-				<td class="td-right">(0|1) 0: don`t need random sampling; 1: need random sampling.[-situation assembly-based] is a prerequisite for this parameter</td>
+				<td class="td-left">-rs</td>
+				<td class="td-right">The number of sequences for random subsampling. (default: the lowest number of sequences).<br>
+Note: "-norm 1" is a prerequisite for this parameter.</td>
 			  </tr>
 			  <tr>
-				<td class="td-left"><b>-rs</b></td>
-				<td class="td-right">the number of sequences for random subsampling. (default: the lowest number of sequences).<br>
-					Note: [-norm 1] is a prerequisite for this parameter.</td>
-			  </tr>
-			  <tr>
-				<td class="td-left"><b>-thread</b></td>
-				<td class="td-right">number of threads (default: 2)</td>
+				<td class="td-left">-thread</td>
+				<td class="td-right">Number of threads (default: 2)</td>
 			  </tr>
 			</tbody>
 		</table>
@@ -144,19 +172,41 @@ li {
 	<div>
 	<h3>Examples </h3>	
 		<ul>
-		<li><p style=" margin-left: 5px;"><b>Read-based</b></p></li>
-		<p>xx</p>
-	
+		<li>
+		  <p style=" margin-left: 5px;"><strong> -situation read-based</strong></p>
+		</li>
+		<p>$&nbsp;perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output</p>
+		<p>$ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output </p>
+		<p><strong>Output: </strong></p>
+		<p>FunProfile_read-based_$method_random.txt &nbsp;OR &nbsp;FunProfile_read-based_$method_norandom.txt:</p>
+		<p class="optionbox">&nbsp;Gene &nbsp; &nbsp;Mean identity &nbsp; SampleA &nbsp; &nbsp;SampleB<br>
+		  geneA &nbsp; &nbsp; &nbsp; &nbsp; 70 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20 <br>
+		  geneB &nbsp; &nbsp; &nbsp; &nbsp; 80 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12</p>
+		<p>SEQ2GENE/$sample.SEQ2G.txt : </p>
+		<p class="optionbox"> Query sequence &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gene <br>
+		  k141_433371_length_91162_1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;geneA<br>
+		  k141_455489_length_11328_1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;geneB</p>
 		<li><p style=" margin-left: 5px;"><b>Assembly-based</b></p></li>
-		<p>xx</p>	
+		<p>$&nbsp;perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -norm 0 -thread 10 -od ./output</p>
+		<p>$ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output </p>
+		<p><strong>Output: </strong></p>
+		<p>FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt </p>
+		<p>ORF2GENE/$sample.ORF2GENE.txt</p>
+		<p>ORF2GENE.tpm (If "-tpm =1" and exist "$sample.tpm")</p>
+		<p>&nbsp;</p>
 		<li><p style=" margin-left: 5px;"><b>Tabular Files</b></p></li>
-		<p>xx </p>
-		
-	</ul>
+		<p>$&nbsp;perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond &nbsp;-norm 0 -thread 10 -od ./output</p>
+		<p>$ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output </p>
+		<p><strong>Output: </strong></p>
+		<p>FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt </p>
+		<p>SEQ2GENE/$sample.SEQ2GENE.txt</p>
+		</ul>
 	</div>
 	
-
+	
+	<!-- 定义工具引用 -->
 	<div >
+	  <p style="text-align: left; margin-left: 55px;font-size: 18px;">&nbsp;</p>
 	  <p style="text-align: left; margin-left: 55px;font-size: 18px;"> <strong>Depending on the tools used, you may want to cite also:</strong></p>
 	  <p style="text-indent: 10px;">DIAMOND:  Buchfink B, Xie C, Huson D H. Fast and sensitive protein alignment using DIAMOND[J]. Nature methods, 2015, 12(1): 59-60.</p>
 	  <p style="text-indent: 10px;">BLASTX: Boratyn G M, Camacho C, Cooper P S, et al. BLAST: a more efficient report with usability improvements[J]. Nucleic acids research, 2013, 41(W1): W29-W33.</p>
