@@ -1,0 +1,168 @@
+#The abundance of pathway
+Category	SubCategoryI	SubCategoryII	sample1	sample2
+Carbon Fixation	CH4	Aerobic oxidation	18	6
+Carbon Fixation	CH4	Anaerobic oxidation of methane (AOM)	4	2
+Carbon Fixation	CO	"Acetyl-CoA <=> CO, CoA"	0	0
+Carbon Fixation	CO	"CO, Oxidized ferredoxin <=> CO2, Reduced ferredoxin"	0	0
+Carbon Fixation	CO	"CO, Quinone <=> CO2, Hydroquinone"	0	0
+Carbon Fixation	CO2	3-Hydroxypropionate Bicycle	3	1
+Carbon Fixation	CO2	3-Hydroxypropionate/4-Hydroxybutyrate Cycle	3	1
+Carbon Fixation	CO2	Calvin-Benson-Bassham Cycle	5	2
+Carbon Fixation	CO2	Dicarboxylate/4-hydroxybutyrate cycle	6	1
+Carbon Fixation	CO2	Reductive acetyl-CoA pathway	1	1
+Carbon Fixation	CO2	Reductive tricarboxylic acid cycle	0	0
+Carbon Fixation	Photosynthesis	Cytochrome b6f complex	0	0
+Carbon Fixation	Photosynthesis	Photosynthesis proteins	0	0
+Carbon Fixation	Photosynthesis	Photosynthetic electron transport	0	0
+Carbon Fixation	Photosynthesis	Photosynthetic phosphorylation	4	1
+Carbon Fixation	Photosynthesis	Photosystem I	0	0
+Carbon Fixation	Photosynthesis	Photosystem II	0	0
+Carbon Release	CH4	Aceticlastic methanogenesis	5	1
+Carbon Release	CH4	Central methanogenic pathway	0	0
+Carbon Release	CH4	Hydrogenotrophic methanogenesis	1	0
+Carbon Release	CH4	Methylotrophic methanogenesis	0	0
+Carbon Release	CO	CO	0	0
+Carbon Release	CO2	CO2	23	6
+Organic Biosynthesis	Amino acid	Alcohol	7	4
+Organic Biosynthesis	Amino acid	Aliphatic	9	4
+Organic Biosynthesis	Amino acid	Anionic	4	0
+Organic Biosynthesis	Amino acid	Aromatic	0	0
+Organic Biosynthesis	Amino acid	Aromatic side-chain	0	0
+Organic Biosynthesis	Amino acid	Cationic	11	6
+Organic Biosynthesis	Amino acid	D-Amino acid	0	0
+Organic Biosynthesis	Amino acid	L-Amino acid	8	3
+Organic Biosynthesis	Amino acid	Others	16	8
+Organic Biosynthesis	Amino acid	S side-chain	7	4
+Organic Biosynthesis	Amino acid	Se	4	2
+Organic Biosynthesis	Amino acid	beta-amino acid	1	0
+Organic Biosynthesis	Antibiotic	Aminoglycoside antibotics	0	0
+Organic Biosynthesis	Antibiotic	Beta-lactam	0	0
+Organic Biosynthesis	Antibiotic	Glycopeptide	0	0
+Organic Biosynthesis	Antibiotic	Tetracycline	0	0
+Organic Biosynthesis	Carbohydrate	Disaccharide	0	0
+Organic Biosynthesis	Carbohydrate	Monosaccharide	2	1
+Organic Biosynthesis	Carbohydrate	Oligosaccharide	1	1
+Organic Biosynthesis	Carbohydrate	Polysaccharide	0	0
+Organic Biosynthesis	Carbohydrate	Pyruvate	18	4
+Organic Biosynthesis	Cofactor	Coenzyme	4	2
+Organic Biosynthesis	Cofactor	Porphyrin	8	2
+Organic Biosynthesis	Cofactor	Vitamin B	31	14
+Organic Biosynthesis	Cofactor	Vitamin E	0	0
+Organic Biosynthesis	Cofactor	Vitamin K	0	0
+Organic Biosynthesis	Glycan	Galactoarabinan	2	0
+Organic Biosynthesis	Glycan	Glycolipid	1	0
+Organic Biosynthesis	Glycan	Lipoarabinomannan	0	0
+Organic Biosynthesis	Glycan	Lipopolysaccharide	0	0
+Organic Biosynthesis	Glycan	O-linked	3	4
+Organic Biosynthesis	Glycan	Peptidoglycan	2	1
+Organic Biosynthesis	Lipid	Fatty acid	11	3
+Organic Biosynthesis	Lipid	Polyketide	0	0
+Organic Biosynthesis	Nucleotide	Purine	13	6
+Organic Biosynthesis	Nucleotide	Pyrimidine	5	2
+Organic Biosynthesis	Organic sulfur	Link between inorganic and organic sulfur transformation	2	1
+Organic Biosynthesis	Organic sulfur	Organic sulfur transformation	5	1
+Organic Biosynthesis	Organic sulfur	Others	2	0
+Organic Biosynthesis	Organophosphorus Compound	Organophosphorus Compound	0	1
+Organic Biosynthesis	Photosynthesis	ATPase	4	1
+Organic Biosynthesis	Photosynthesis	C4 cycle	0	0
+Organic Biosynthesis	Photosynthesis	Calvin cycle	5	2
+Organic Biosynthesis	Photosynthesis	Photosynthetic pigment	0	0
+Organic Biosynthesis	Secondary metabolite	Terpenoid	0	0
+Organic Biosynthesis	Secondary metabolite	Tetracycline	0	0
+Organic Biosynthesis	Secondary metabolite	Vancomycin	0	0
+Organic Biosynthesis	Xenobiotics	Selenocompound	2	1
+Organic Degration	Amino acid	Alcohol	0	0
+Organic Degration	Amino acid	Aliphatic	9	4
+Organic Degration	Amino acid	Anionic	1	0
+Organic Degration	Amino acid	Aromatic	0	0
+Organic Degration	Amino acid	Aromatic side-chain	0	0
+Organic Degration	Amino acid	Cationic	5	3
+Organic Degration	Amino acid	D-Amino acid	0	0
+Organic Degration	Amino acid	L-Amino acid	0	0
+Organic Degration	Amino acid	S side-chain	0	0
+Organic Degration	Amino acid	beta-amino acid	0	0
+Organic Degration	Antibiotic	Antibiotic	1	0
+Organic Degration	Aromatics	Aromatics	10	3
+Organic Degration	Carbohydrate	Alpha-galactans	0	0
+Organic Degration	Carbohydrate	Arabinan	0	0
+Organic Degration	Carbohydrate	Arabinose	0	0
+Organic Degration	Carbohydrate	Beta-galactans	0	0
+Organic Degration	Carbohydrate	Beta-mannan	0	0
+Organic Degration	Carbohydrate	Cellulose	0	0
+Organic Degration	Carbohydrate	Chitin	0	0
+Organic Degration	Carbohydrate	Citrate cycle	7	2
+Organic Degration	Carbohydrate	Disaccharide	0	0
+Organic Degration	Carbohydrate	Fermentation	3	1
+Organic Degration	Carbohydrate	Fucose	0	0
+Organic Degration	Carbohydrate	Galactose	0	0
+Organic Degration	Carbohydrate	Galacturonic acid	0	1
+Organic Degration	Carbohydrate	Glycan	1	0
+Organic Degration	Carbohydrate	Glycolipid	1	0
+Organic Degration	Carbohydrate	Glycolysis	16	5
+Organic Degration	Carbohydrate	Glyoxylate cycle	4	1
+Organic Degration	Carbohydrate	Hemicellulose	0	0
+Organic Degration	Carbohydrate	Lactose	0	0
+Organic Degration	Carbohydrate	Lipopolysaccharide	0	0
+Organic Degration	Carbohydrate	Mannose	0	0
+Organic Degration	Carbohydrate	Monosaccharide	8	3
+Organic Degration	Carbohydrate	Oxidative phosphorylation	13	7
+Organic Degration	Carbohydrate	Pectin	0	0
+Organic Degration	Carbohydrate	Pentose phosphate	8	5
+Organic Degration	Carbohydrate	Peptidoglycan	0	0
+Organic Degration	Carbohydrate	Polysaccharide	1	0
+Organic Degration	Carbohydrate	Pyruvate	6	1
+Organic Degration	Carbohydrate	Starch	1	0
+Organic Degration	Carbohydrate	Sucrose	0	0
+Organic Degration	Carbohydrate	Xylan	0	0
+Organic Degration	Carbohydrate	Xyloglucan	0	0
+Organic Degration	Carbohydrate	Xylose-dehydratase	0	0
+Organic Degration	Carbohydrate	Xylose-isomerase	0	0
+Organic Degration	Carbohydrate	Xylose-oxidoreductase	0	0
+Organic Degration	Cofactor	Coenzyme	0	0
+Organic Degration	Cofactor	Porphyrin	0	0
+Organic Degration	Cofactor	Vitamin A	2	1
+Organic Degration	Cofactor	Vitamin B	7	6
+Organic Degration	Cofactor	Vitamin E	0	0
+Organic Degration	Cofactor	Vitamin K	0	0
+Organic Degration	Lipid	Fatty acid	10	4
+Organic Degration	Lipid	Polyketide	0	0
+Organic Degration	Methane-aerobic	Oxidation of formaldehyde	2	1
+Organic Degration	Methane-aerobic	Oxidation of formate	0	0
+Organic Degration	Methane-aerobic	Oxidation of merthane and C1 compounds	1	0
+Organic Degration	Methane-aerobic	RuMP pathway	4	1
+Organic Degration	Methane-aerobic	serine cycle	11	4
+Organic Degration	Methane-anaerobic	Anaerobic oxidation of methane (AOM)	4	2
+Organic Degration	Nucleotide	Purine	10	2
+Organic Degration	Nucleotide	Pyrimidine	4	1
+Organic Degration	Organic sulfur	Link between inorganic and organic sulfur transformation	2	1
+Organic Degration	Organic sulfur	Organic sulfur transformation	4	2
+Organic Degration	Organic sulfur	Others	2	0
+Organic Degration	Organophosphorus Compound	Organic phosphoester hydrolysis	3	1
+Organic Degration	Organophosphorus Compound	Others	0	0
+Organic Degration	Organophosphorus Compound	Phosphonate and phosphinate metabolism	1	1
+Organic Degration	Secondary metabolite	Secondary metabolite	1	0
+Organic Degration	Xenobiotics	Herbicide	1	1
+Organic Degration	Xenobiotics	Lignin	17	5
+Organic Degration	Xenobiotics	Organic pollutant	3	1
+Organic Degration	Xenobiotics	Plastics	1	1
+Organic Degration	Xenobiotics	Selenocompound	0	1
+Organic Degration	Xenobiotics	Styrene	0	0
+Organic Transformation	Amino acid	D-Amino acid	0	0
+Organic Transformation	Antibiotic	Aminoglycoside antibotics	0	0
+Organic Transformation	Antibiotic	Lipopeptide antibiotics	0	0
+Organic Transformation	Antibiotic	Macrolide-lincosamide-streptogramin	0	0
+Organic Transformation	Antibiotic	Polypeptide antibiotic	0	0
+Organic Transformation	Antibiotic	Viomycin	0	0
+Organic Transformation	Carbohydrate	Carbohydrate	0	0
+Organic Transformation	Glycan	Galactoarabinan	0	0
+Organic Transformation	Glycan	Glycolipid	1	0
+Organic Transformation	Glycan	Lipopolysaccharide	1	0
+Organic Transformation	Glycan	Peptidoglycan	4	1
+Organic Transformation	Lipid	Fatty acid	1	0
+Organic Transformation	Lipid	Polyketide	0	0
+Organic Transformation	Protein	Protein	0	0
+Organic Transformation	Xenobiotics	Lignin	13	4
+Transport	ABC transport	ABC transport	15	7
+Transport	Phosphotransferase system	Phosphotransferase system	6	2
+Transport	Transport system	Transport system	0	0
+Transport	Two-component system	Two-component system	13	8

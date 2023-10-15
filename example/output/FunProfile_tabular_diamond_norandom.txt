@@ -1,0 +1,177 @@
+#Not random sampling
+Gene	Mean Identity	Annotation	KO	Brenda	CAZY	CAZY_group	COG	sample1	sample2
+aapP	98	General L-amino acid transport ATP-binding proteinK09972(aapP, bztD):general L-amino acid transport system ATP-binding protein	7.4.2.1	-	-	COG1126	0	1
+accC	82.875	Acetyl-CoA carboxylase|Biotin carboxylaseK01961(accC):acetyl-CoA carboxylase, biotin carboxylase subunit	6.4.1.2/6.3.4.14	-	-	COG0439/COG4770	3	1
+acdA	62.5	Acetate-CoA ligase (ADP-forming)K01905(acdA):acetate---CoA ligase (ADP-forming) subunit alpha	6.2.1.13	-	-	COG1960/COG1042/COG0803	1	0
+ackA	71.7	Acetate kinaseK00925(ackA):acetate kinase	2.7.2.1	-	-	COG0282/COG0280/COG4869	1	0
+acnB	100	Aconitate hydrataseK01682(acnB):aconitate hydratase 2 / 2-methylisocitrate dehydratase	4.2.1.3/4.2.1.99	-	-	COG1049/COG1048	2	1
+acs	83.95	Acetyl-CoA synthetaseK01895(ACSS1_2, acs):acetyl-CoA synthetase	6.2.1.1	-	-	COG1042/COG0454/COG0318/COG0365/COG0045	2	0
+acuI	78.35	Acrylyl-CoA reductaseK19745(acuI):acrylyl-CoA reductase (NADPH)	1.3.1.-	-	-	COG0604	1	1
+araC	100	L-arabonate dehydrataseK13875(K13875, araC):L-arabonate dehydrase	4.2.1.25	-	-	COG2207/COG4977/COG3708/COG1917/COG2204/COG0662/COG0129/COG2202/COG0693	2	0
+araG	98	L-arabinose transport ATP-binding proteinK10539(araG):L-arabinose transport system ATP-binding protein	7.5.2.12	-	-	COG1129	1	1
+argB	100	Amino-acid acetyltransferaseK00930(argB):acetylglutamate kinase|K05828(lysZ, argB):[amino group carrier protein-L-2-aminoadipate 6-kinase	2.7.2.8/2.7.2.17	-	-	COG0548/COG0448	1	0
+argC	92.325	N-acetyl-gamma-glutamyl-phosphate reductaseK00145(argC):N-acetyl-gamma-glutamyl-phosphate reductase|K05829(lysY, argC):LysW-gamma-L-alpha-aminoadipyl-6-phosphate/LysW-L-glutamyl-5-phosphate reductase	1.2.1.38/1.2.1.103/1.2.1.106	-	-	COG0002	3	1
+argH	75	Argininosuccinate lyaseK01755(argH, ASL):argininosuccinate lyase	4.3.2.1	-	-	COG0165/COG1246	1	0
+argJ	66	Arginine biosynthesis bifunctional proteinK00620(argJ):glutamate N-acetyltransferase / amino-acid N-acetyltransferase	2.3.1.35/2.3.1.1	-	-	COG0548/COG1364	1	0
+asd	98	Aspartate-semialdehyde dehydrogenaseK00133(asd):aspartate-semialdehyde dehydrogenase	1.2.1.11	-	-	COG0136/COG0688	2	0
+atpA	100	ATP synthase subunit alphaK02111(ATPF1A, atpA):F-type H+/Na+-transporting ATPase subunit alpha|K02117(ATPVA, ntpA, atpA):V/A-type H+/Na+-transporting ATPase subunit A	7.1.2.2/7.2.2.1	-	-	COG0056/COG1155/arCOG03154	1	1
+atpB	100	ATP synthase subunit aK02108(ATPF0A, atpB):F-type H+-transporting ATPase subunit a|K02118(ATPVB, ntpB, atpB):V/A-type H+/Na+-transporting ATPase subunit B	-	-	-	COG0055/COG1156/COG0356/28HWS	1	0
+atpD	93.9	ATP synthase subunit betaK02112(ATPF1B, atpD):F-type H+/Na+-transporting ATPase subunit beta|K02120(ATPVD, ntpD, atpD):V/A-type H+/Na+-transporting ATPase subunit D	7.1.2.2/7.2.2.1	-	-	COG0055/COG0712/COG1394	1	0
+atpG	100	ATP synthase gamma chainK02115(ATPF1G, atpG):F-type H+-transporting ATPase subunit gamma	-	-	-	COG0224/COG0711	1	0
+betB	56	NAD/NADP-dependent betaine aldehyde dehydrogenaseK00130(betB, gbsA):betaine-aldehyde dehydrogenase	1.2.1.8	-	-	COG1012/COG0288	1	0
+bioC	77.6	Malonyl-[acyl-carrier protein] O-methyltransferaseK02169(bioC):malonyl-CoA O-methyltransferase	2.1.1.197	-	-	COG0500/COG2830/COG1073/COG4106/COG2227/COG0553/COG0132	1	0
+bktB	96.45	beta-ketothiolase-	-	-	-	COG0183	1	1
+carB	76.6	Carbamoyl-phosphate synthaseK01955(carB, CPA2):carbamoyl-phosphate synthase large subunit|K18317(cpmB, carB):carboxymethylproline synthase	6.3.5.5/2.3.1.226	-	-	COG0458	1	0
+ccoN	75.5	Cytochrome-c oxidaseK00404(ccoN):cytochrome c oxidase cbb3-type subunit I	7.1.1.9	-	-	COG3278/COG2010/COG2217/COG2993	1	1
+cheD	50	Chemoreceptor glutamine deamidaseK03411(cheD):chemotaxis protein CheD	3.5.1.44	-	-	COG1871/COG0840/COG1639/COG1352	1	0
+coaBC	77.9	Coenzyme A biosynthesis bifunctional protein CoaBCK13038(coaBC, dfp):phosphopantothenoylcysteine decarboxylase / phosphopantothenate---cysteine ligase	4.1.1.36/6.3.2.5	-	-	COG0452	2	1
+cobB	98	Hydrogenobyrinate a,c-diamide synthase-	-	-	-	COG1797/COG0846/COG1010/COG0079	1	1
+cobI	91.8	Precorrin-2 c(20)-methyltransferase-	-	-	-	COG2243/COG1010/COG2073/COG2082	1	1
+cobO	93.85	Corrinoid adenosyltransferase-	-	-	-	COG2109/COG1075/COG2096	1	1
+cobS-co	77.55	Aerobic cobaltochelatase subunit CobS-	-	-	-	-	1	1
+cobT-alpha	91.7	Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase-	-	-	-	-	1	1
+cofH	79.6	5-amino-6-(D-ribitylamino)uracil--L-tyrosine 4-hydroxyphenyl transferaseK11781(cofH):5-amino-6-(D-ribitylamino)uracil---L-tyrosine 4-hydroxyphenyl transferase	2.5.1.147	-	-	COG1060	1	0
+ctaD	90	Cytochrome c oxidaseK02274(coxA, ctaD):cytochrome c oxidase subunit I	7.1.1.9	-	-	COG0843	1	0
+cyoB	58.3	Cytochrome bo(3) ubiquinol oxidaseK02298(cyoB):cytochrome o ubiquinol oxidase subunit I	7.1.1.3	-	-	COG0843	1	0
+cysD	83.9	Sulfate adenylyltransferaseK00957(cysD):sulfate adenylyltransferase subunit 2	2.7.7.4	-	-	COG0175/COG2873/COG1832	1	1
+cysE	77.8	Serine O-acetyltransferaseK00640(cysE):serine O-acetyltransferase|K23304(cysE):serine O-acetyltransferase	2.3.1.30	-	-	COG1045/COG0654/COG1670/COG0454	1	1
+cysG	85.7	Siroheme synthaseK02302(cysG):uroporphyrin-III C-methyltransferase / precorrin-2 dehydrogenase / sirohydrochlorin ferrochelatase	2.1.1.107/1.3.1.76/4.99.1.4	-	-	COG0007/COG0730/COG1648	1	0
+dacB	93.9	Carboxypeptidase|D-alanyl-D-alanine carboxypeptidaseK07259(dacB):serine-type D-Ala-D-Ala carboxypeptidase/endopeptidase (penicillin-binding protein 4)	3.4.16.4/3.4.21.-	-	-	COG1686/COG2027/COG1876/COG1624	1	0
+desA1	57.4	Acyl-[acyl-carrier-protein] desaturaseK03921(FAB2, SSI2, desA1):acyl-[acyl-carrier-protein desaturase	1.14.19.2/1.14.19.11/1.14.19.26	-	-	COG0208	1	0
+dhlDH	72.15	dihydrolipoamide dehydrogenase-	-	-	-	-	2	0
+dmdC	89.525	3-(methylthio)propanoyl-CoA dehydrogenaseK20035(dmdC):3-(methylthio)propanoyl-CoA dehydrogenase	1.3.8.-	-	-	-	3	1
+doeA	68.2	Ectoine hydrolaseK15783(doeA):ectoine hydrolase	3.5.4.44	-	-	COG0006	1	0
+doeD	88.8	Diaminobutyrate--2-oxoglutarate transaminaseK15785(doeD):L-2,4-diaminobutyrate transaminase	2.6.1.76	-	-	COG0161	2	0
+dppC	75.8	Dipeptide transport system permease protein|Di/tripeptide transport system permease proteinK12370(dppC):dipeptide transport system permease protein|K16201(dppC):dipeptide transport system permease protein	-	-	-	COG1173/COG0601/COG0444/COG1123	0	1
+eda	63.3	2-dehydro-3-deoxy-phosphogluconate aldolase|KHG/KDPG aldolaseK01625(eda):2-dehydro-3-deoxyphosphogluconate aldolase / (4S)-4-hydroxy-2-oxoglutarate aldolase	4.1.2.14/4.1.3.42	-	-	COG0800/COG0524/COG0794	0	1
+eno	87.6	EnolaseK01689(ENO, eno):enolase	4.2.1.11	-	-	COG0148/COG4948	2	1
+entE	96	Enterobactin synthaseK02363(entE, dhbE, vibE, mxcE):2,3-dihydroxybenzoate-AMP ligase	6.3.2.14/2.7.7.58	-	-	COG1021/COG0147	1	0
+fabF	84.62	3-oxoacyl-[acyl-carrier-protein] synthaseK09458(fabF, OXSM, CEM1):3-oxoacyl-[acyl-carrier-protein synthase II	2.3.1.179	-	-	COG0304	3	2
+fabH	91.8	3-oxoacyl-[acyl-carrier-protein] synthaseK00648(fabH):3-oxoacyl-[acyl-carrier-protein synthase III	2.3.1.180	-	-	COG0022/COG0332/COG0331	1	0
+fbaA	79.0666666666667	Fructose-bisphosphate aldolaseK01624(FBA, fbaA):fructose-bisphosphate aldolase, class II	4.1.2.13	-	-	COG0191	2	1
+fbp	85.7	Fructose-1,6-bisphosphatase IK03841(FBP, fbp):fructose-1,6-bisphosphatase I|K18851(fbp):diacylglycerol O-acyltransferase / trehalose O-mycolyltransferase	3.1.3.11/2.3.1.20/2.3.1.122	CE	CE1	COG0158/COG3855/COG1980/COG0545	2	0
+fhs	88.85	Formate--tetrahydrofolate ligaseK01938(fhs):formate--tetrahydrofolate ligase	6.3.4.3	-	-	COG2759/COG0673	1	1
+fmt	64.6	Methionyl-tRNA formyltransferaseK00604(MTFMT, fmt):methionyl-tRNA formyltransferase	2.1.2.9	-	-	COG0223	0	1
+folE	78.75	GTP cyclohydrolaseK01495(GCH1, folE):GTP cyclohydrolase IA	3.5.4.16	-	-	COG0302	1	1
+frmA	89.9666666666667	S-(hydroxymethyl)glutathione dehydrogenaseK00121(frmA, ADH5, adhC):S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase	1.1.1.284/1.1.1.1	-	-	COG1062/KOG4261	2	1
+fwdB	89.1	Tungsten containing formylmethanofuran dehydrogenaseK00201(fwdB, fmdB):formylmethanofuran dehydrogenase subunit B	1.2.7.12	-	-	COG1029	1	0
+gcd	58.3	Glucose dehydrogenaseK00117(gcd):quinoprotein glucose dehydrogenase	1.1.5.2	-	-	COG1063/COG4993/COG2133	1	1
+gcvP	100	Glycine dehydrogenaseK00281(GLDC, gcvP):glycine dehydrogenase	1.4.4.2	-	-	COG0403/COG1003/COG0112	1	0
+gcvPA	95.9	Glycine dehydrogenaseK00282(gcvPA):glycine dehydrogenase subunit 1	1.4.4.2	-	-	COG0403	1	0
+gcvPB	100	Glycine dehydrogenaseK00283(gcvPB):glycine dehydrogenase subunit 2	1.4.4.2	-	-	COG1003/COG0403	1	0
+gcvT	62	AminomethyltransferaseK00605(gcvT, AMT):aminomethyltransferase	2.1.2.10	-	-	COG0404/COG0112/COG0354	1	1
+ggt	95.9	Glutathione hydrolase proenzymeK00681(ggt):gamma-glutamyltranspeptidase / glutathione hydrolase	2.3.2.2/3.4.19.13	-	-	COG0405	1	0
+glcB	91.8	Malate synthaseK01638(aceB, glcB):malate synthase|K20118(ptsG, glcA, glcB):glucose PTS system EIICBA or EIICB component	2.3.3.9/2.7.1.199	-	-	COG2225	1	0
+glgB	98	1,4-alpha-glucan branching enzymeK00700(GBE1, glgB):1,4-alpha-glucan branching enzyme	2.4.1.18	GH	GH13_8/GH13_9/GH57	COG0296/COG3281/COG0033	1	0
+glmS	98	Glutamine--fructose-6-phosphate aminotransferaseK00820(glmS, GFPT):glutamine---fructose-6-phosphate transaminase (isomerizing)|K01846(glmS, mutS, mamA):methylaspartate mutase sigma subunit	2.6.1.16/5.4.99.1	-	-	COG0449/COG2185	1	0
+glnA	78.08	Glutamine synthetaseK01915(glnA, GLUL):glutamine synthetase|K20712(glnA):3-(hydroxyamino)phenol mutase	6.3.1.2/5.4.4.3	-	-	COG0174/COG3968	3	2
+glnQ	82.2	Glutamine transport ATP-binding proteinK10038(glnQ):glutamine transport system ATP-binding protein|K10041(peb1C, glnQ):aspartate/glutamate/glutamine transport system ATP-binding protein	7.4.2.1	-	-	COG1126/COG0765/COG0834/COG1136	2	0
+glpK	83.7	Glycerol kinaseK00864(glpK, GK):glycerol kinase	2.7.1.30	-	-	COG0554	1	0
+glpQ	67.8	Glycerophosphodiester phosphodiesteraseK01126(E3.1.4.46, glpQ, ugpQ):glycerophosphoryl diester phosphodiesterase|K17323(glpQ):glycerol transport system permease protein	3.1.4.46	-	-	COG4781/COG0584/COG0496	1	1
+gltB	55.1	Glutamate synthase|Ferredoxin-dependent glutamate synthaseK00265(gltB):glutamate synthase (NADPH) large chain	1.4.1.13	-	-	COG0069/COG0067/COG0070	1	0
+gltX	51	Glutamate--tRNA ligaseK01885(EARS, gltX):glutamyl-tRNA synthetase|K09698(gltX):nondiscriminating glutamyl-tRNA synthetase	6.1.1.17/6.1.1.24	-	-	COG0008/COG1384	1	0
+gmd	100	GDP-mannose 4,6 dehydrataseK01711(gmd, GMDS):GDPmannose 4,6-dehydratase	4.2.1.47	-	-	COG1089/COG0451	1	0
+gnl	70.9	GluconolactonaseK01053(gnl, RGN):gluconolactonase	3.1.1.17	-	-	COG3386/COG2374/COG1075/COG2721	1	1
+gntK	74	GluconokinaseK00851(idnK, gntK):gluconokinase|K20594(genK, gacD, gntK):cobalamin-dependent radical SAM methyltransferase|K25031(gntK):gluconokinase	2.7.1.12/2.1.1.-	-	-	COG1070/COG1335/COG0645/COG3265/COG2186/COG3090/COG1472/COG2187	1	0
+gox	91.95	Glycolate oxidase-	-	-	-	-	2	0
+gpmI	73.5	Phosphoglycerate mutaseK15633(gpmI):2,3-bisphosphoglycerate-independent phosphoglycerate mutase	5.4.2.12	-	-	COG0696	1	1
+gsiA	89.8	Glutathione import ATP-binding proteinK13892(gsiA):glutathione transport system ATP-binding protein	-	-	-	COG1123/COG0444	1	0
+hcrC2	93.9	4-hydroxybenzoyl-CoA reductase subunit gamma 2-	-	-	-	-	1	0
+hemB	91.85	Delta-aminolevulinic acid dehydrataseK01698(hemB, ALAD):porphobilinogen synthase	4.2.1.24	-	-	COG0113	1	1
+hemF	73.5	Oxygen-dependent coproporphyrinogen-III oxidaseK00228(CPOX, hemF):coproporphyrinogen III oxidase	1.3.3.3	-	-	COG0408/COG0169/COG0635	2	0
+hemL	79.4666666666667	Glutamate-1-semialdehyde 2,1-aminomutaseK01845(hemL):glutamate-1-semialdehyde 2,1-aminomutase	5.4.3.8	-	-	COG0001	2	1
+hisI	79.2	Phosphoribosyl-AMP cyclohydrolase|Phosphoribosyl-ATP pyrophosphataseK01496(hisI):phosphoribosyl-AMP cyclohydrolase	3.5.4.19	-	-	COG0139/COG0107/COG0106/COG0140	0	1
+hom	83.65	Homoserine dehydrogenaseK00003(hom):homoserine dehydrogenase	1.1.1.3	-	-	COG0460/COG0317/COG0440/COG4747	1	1
+hutH	70.2	Histidine ammonia-lyaseK01745(hutH, HAL):histidine ammonia-lyase	4.3.1.3	-	-	COG2986/COG2199	0	1
+icd	98	Isocitrate dehydrogenase [NADP]K00031(IDH1, IDH2, icd):isocitrate dehydrogenase	1.1.1.42	-	-	COG0538/COG2838/COG0473/COG0517	1	0
+iscS	67.3	Cysteine desulfuraseK04487(iscS, NFS1):cysteine desulfurase	2.8.1.7	-	-	COG1104	1	0
+kbl	95.3	2-amino-3-ketobutyrate coenzyme A ligase|8-amino-7-oxononanoate synthase 1K00639(kbl, GCAT):glycine C-acetyltransferase	2.3.1.29	-	-	COG0156	2	0
+leuC	62	3-isopropylmalate dehydratase|Isopropylmalate/citramalate isomeraseK01703(leuC, IPMI-L):3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit	4.2.1.33/4.2.1.35	-	-	COG0065	1	0
+leuD	95.9	3-isopropylmalate dehydratase|Isopropylmalate/citramalate isomeraseK01704(leuD, IPMI-S):3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit	4.2.1.33/4.2.1.35	-	-	COG0066/COG0065	0	1
+livK	95.9	Amino acid ABC transporter substrate-binding proteinK01999(livK):branched-chain amino acid transport system substrate-binding protein	-	-	-	COG0683	1	0
+lpdA	61.2	2-oxoglutarate dehydrogenase E3 componentK23842(lpdA):NAD(P)H dehydrogenase (quinone)	1.6.5.2	-	-	COG1249/COG0508	0	1
+lpxC	82.6	UDP-3-O-acyl-N-acetylglucosamine deacetylaseK02535(lpxC):UDP-3-O-[3-hydroxymyristoyl N-acetylglucosamine deacetylase	3.5.1.108	CE	CE11	COG0774/COG2204/COG0764	1	0
+malK	98	Trehalose/maltose import ATP-binding protein|Maltose/maltodextrin import ATP-binding proteinK10111(malK, mtlK, thuK):multiple sugar transport system ATP-binding protein|K10112(msmX, msmK, malK, sugC, ggtA, msiK):multiple sugar transport system ATP-binding protein|K11614(yufL, malK):two-component system, CitB family, sensor histidine kinase MalK	7.5.2.-/2.7.13.3	-	-	COG3290/COG3842/COG3839	1	0
+mccB	95.95	Cystathionine gamma-lyase / homocysteine desulfhydraseK17217(mccB):cystathionine gamma-lyase / homocysteine desulfhydrase	4.4.1.1/4.4.1.2	-	-	COG0626/COG4799	1	1
+mdh-K00024	71.4	Malate dehydrogenaseK00024(mdh):malate dehydrogenase	1.1.1.37	-	-	-	1	0
+metC	67.3	Cystathionine beta-lyaseK01760(metC):cysteine-S-conjugate beta-lyase	4.4.1.13	-	-	COG0626/COG1168/COG0514/COG4100/COG0210/COG0031	1	0
+mlaF	100	Phospholipid transport system ATP-binding proteinK02065(mlaF, linL, mkl):phospholipid/cholesterol/gamma-HCH transport system ATP-binding protein	-	-	-	COG1127	1	0
+mntB	84.7	Manganese transport system membrane protein|Manganese transport system ATP-binding proteinK11602(mntB):manganese transport system permease protein|K11710(troB, mntB, znuC):manganese/zinc/iron transport system ATP- binding protein|K19976(mntB):manganese transport system permease protein	7.2.2.5	-	-	COG1108/COG1121/COG0803	1	1
+moaE	93.2333333333333	Molybdopterin synthaseK03635(MOCS2B, moaE):molybdopterin synthase catalytic subunit	2.8.1.12	-	-	COG0314	2	1
+mtgA-K03814	100	Biosynthetic peptidoglycan transglycosylaseK03814(mtgA):monofunctional glycosyltransferase	2.4.1.129	-	-	-	1	0
+mtkB	94	Malate-CoA ligaseK08692(mtkB):malate-CoA ligase subunit alpha	6.2.1.9	-	-	COG0074	1	0
+murC	92.85	UDP-N-acetylmuramate--L-alanine ligaseK01924(murC):UDP-N-acetylmuramate--alanine ligase	6.3.2.8	-	-	COG0773/COG0436	1	1
+nagK-K16165	75	Fumarylpyruvate hydrolaseK16165(nagK):fumarylpyruvate hydrolase	3.7.1.20	-	-	-	1	0
+narB	97.95	Nitrate reductaseK00367(narB):ferredoxin-nitrate reductase	1.7.7.2	-	-	COG0243/COG1142	1	1
+narG	52	Nitrate reductaseK00370(narG, narZ, nxrA):nitrate reductase / nitrite oxidoreductase, alpha subunit	1.7.5.1/1.7.99.-	-	-	COG5013/COG1140/COG0243	1	0
+narZ	76.35	Nitrate reductaseK00370(narG, narZ, nxrA):nitrate reductase / nitrite oxidoreductase, alpha subunit	1.7.5.1/1.7.99.-	-	-	COG5013	1	1
+ndk	86	Nucleoside diphosphate kinaseK00940(ndk, NME):nucleoside-diphosphate kinase	2.7.4.6	-	-	COG0105	1	0
+nuoG	93.9	NADH-quinone oxidoreductase subunit GK00336(nuoG):NADH-quinone oxidoreductase subunit G	7.1.1.2	-	-	COG3383/COG0243/COG1034/COG0446	1	1
+oppD	91.8	Oligopeptide transport ATP-binding proteinK15583(oppD):oligopeptide transport system ATP-binding protein	-	-	-	COG0444/COG1123	1	0
+paaA	98	1,2-phenylacetyl-CoA epoxidase, subunit AK02609(paaA):ring-1,2-phenylacetyl-CoA epoxidase subunit PaaA	1.14.13.149	-	-	COG3396/COG0476/COG1024	1	0
+panD	62.5	Aspartate 1-decarboxylaseK01579(panD):aspartate 1-decarboxylase	4.1.1.11	-	-	COG0853	1	0
+pcaJ	70.2	3-oxoadipate CoA-transferase, subunit AK01032(pcaJ):3-oxoadipate CoA-transferase, beta subunit	2.8.3.6	-	-	COG2057/COG1788	2	0
+pduO	68	Corrinoid adenosyltransferaseK00798(MMAB, pduO):cob(I)alamin adenosyltransferase	2.5.1.17	-	-	COG2096/COG3193	1	0
+pdxA	93.375	4-hydroxythreonine-4-phosphate dehydrogenaseK00097(pdxA):4-hydroxythreonine-4-phosphate dehydrogenase	1.1.1.262	-	-	COG0760/COG1995/COG0262/COG3395	3	1
+petA-K00411	100	Quinol-cytochrome-c reductaseK00411(UQCRFS1, RIP1, petA):ubiquinol-cytochrome c reductase iron-sulfur subunit	7.1.1.8	-	-	-	1	0
+pgsA	69.3	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferaseK00995(pgsA, PGS1):CDP-diacylglycerol---glycerol-3-phosphate 3-phosphatidyltransferase	2.7.8.5	-	-	COG0558	1	1
+phbC-EC2.3.1	67.3	Poly-beta-hydroxybutyrate polymeraseK03821(phbC, phaC):polyhydroxyalkanoate synthase subunit PhaC	2.3.1.-	-	-	-	1	0
+pheA	57.8	Chorismate mutase|Prephenate dehydrataseK14170(pheA):chorismate mutase / prephenate dehydratase	5.4.99.5/4.2.1.51	-	-	COG0077/COG2876/COG1605	1	0
+phnE	84.675	Phosphonate transport system permease proteinK02042(phnE):phosphonate transport system permease protein	-	-	-	COG3639/COG3221/COG3638	3	1
+phnM	95.7	Alpha-D-ribose 1-methylphosphonate 5-triphosphate diphosphataseK06162(phnM):alpha-D-ribose 1-methylphosphonate 5-triphosphate diphosphatase	3.6.1.63	-	-	COG3454	0	1
+phnX	87.5	Phosphonoacetaldehyde hydrolaseK05306(phnX):phosphonoacetaldehyde hydrolase	3.11.1.1	-	-	COG0637/COG0075	1	0
+phoB	65.2333333333333	Alkaline phosphataseK01077(E3.1.3.1, phoA, phoB):alkaline phosphatase|K07657(phoB):two-component system, OmpR family, phosphate regulon response regulator PhoB	3.1.3.1	-	-	COG0745/COG1657/COG1785/COG1404	2	1
+phoR	53.65	Two-component system, OmpR family, phosphate regulon sensor histidine kinase PhoRK07636(phoR):two-component system, OmpR family, phosphate regulon sensor histidine kinase PhoR	2.7.13.3	-	-	COG5002/COG2770/COG0642/COG5000/COG3850/COG2203/COG3087/COG0840/COG0745	1	1
+phoX	63.6	Alkaline phosphatase-	-	-	-	COG3211/COG3119/COG1409/COG2340/COG3087	2	0
+pimC	100	Pimeloyl-CoA dehydrogenase large subunitK14335(pimC):alpha-1,6-mannosyltransferase	2.4.1.-	GH|GT|CE|CBM	CBM18/CBM20/CBM43/CE4/GH0/GH1/GH112/GH13/GH13_18/GH13_2/GH13_23/GH130/GH16_1/GH16_18/GH16_19/GH17/GH27/GH3/GH32/GH33/GH35/GH5_7/GH65/GH70/GH72/GH94/GT0/GT1/GT104/GT109/GT11/GT111/GT113/GT114/GT115/GT13/GT14/GT15/GT2/GT21/GT22/GT23/GT24/GT25/GT26/GT29/GT31/GT32/GT34/GT37/GT4/GT40/GT41/GT44/GT45/GT47/GT49/GT5/GT50/GT54/GT56/GT60/GT62/GT67/GT69/GT7/GT71/GT75/GT8/GT81/GT82/GT87/GT88/GT90/GT92/GT93/GT96/GT97/GT98	COG0438	1	0
+pldA	60.9	PhospholipaseK01058(pldA):phospholipase A1/A2	3.1.1.32/3.1.1.4	-	-	COG2829/COG0790	1	0
+porA	92	Pyruvate ferredoxin oxidoreductaseK00169(porA):pyruvate ferredoxin oxidoreductase alpha subunit	1.2.7.1	-	-	COG0674/COG1013/COG1014/2B1K4	1	0
+porB	89.2	Pyruvate ferredoxin oxidoreductaseK00170(porB):pyruvate ferredoxin oxidoreductase beta subunit	1.2.7.1	-	-	COG3203/COG1013/COG0674/2AU9B	1	0
+ppk	90.85	Polyphosphate kinase-	-	-	-	COG0454/COG0317/COG0855/COG0174/COG0639	1	1
+pps	81.65	Pyruvate, water dikinaseK01007(pps, ppsA):pyruvate, water dikinase|K09722(K09722, pps):4-phosphopantoate---beta-alanine ligase	2.7.9.2/6.3.2.36	-	-	COG0574/COG1080/COG3848	1	1
+ppsA	100	Pyruvate, water dikinaseK01007(pps, ppsA):pyruvate, water dikinase|K15664(K15664, ppsA, fenC):fengycin family lipopeptide synthetase A	2.7.9.2	-	-	COG1020/COG3848/COG0574/COG3321/COG1080/COG1028/COG0300/COG0236/COG2197	1	0
+pqqC	100	Coenzyme PQQ synthesisK06137(pqqC):pyrroloquinoline-quinone synthase	1.3.3.11	-	-	COG5424/COG0535/COG1235	1	0
+prpE	90	Propionate--CoA ligaseK01908(ACSS3, prpE):propionyl-CoA synthetase	6.2.1.17	-	-	COG0365/COG0639	1	0
+pseI	93.85	Pseudaminic acid synthaseK15898(pseI, neuB3):pseudaminic acid synthase	2.5.1.97	-	-	COG1670/COG2089	1	1
+pstA	93.9	Phosphate transport system permease proteinK02038(pstA):phosphate transport system permease protein	-	-	-	COG0226/COG0581/COG0573	1	1
+pstB	97.6	Phosphate import ATP-binding proteinK02036(pstB):phosphate transport system ATP-binding protein	7.3.2.1	-	-	COG3839/COG1117/COG0573	1	0
+pta	100	Phosphate acetyltransferaseK00625(E2.3.1.8, pta):phosphate acetyltransferase|K13788(pta):phosphate acetyltransferase	2.3.1.8	-	-	COG0857/COG0280/COG2030/COG0262	1	1
+ptsI	87.8	Phosphoenolpyruvate-protein phosphotransferaseK08483(ptsI):phosphoenolpyruvate-protein phosphotransferase (PTS system enzyme I)	2.7.3.9	-	-	COG1080/COG0574	1	0
+purC	96.25	Phosphoribosylaminoimidazole-succinocarboxamide synthaseK01923(purC):phosphoribosylaminoimidazole-succinocarboxamide synthase	6.3.2.6	-	-	COG0152/COG0151/COG0041/COG3654/COG0015/COG3943	1	1
+purD	82.85	phosphoribosylamine---glycine ligaseK01945(purD):phosphoribosylamine---glycine ligase	6.3.4.13	-	-	COG0151/COG1307/COG0150/COG0041	2	0
+purH	62.5	Phosphoribosylaminoimidazolecarboxamide formyltransferase|Inosine 5'-monophosphate cyclohydrolaseK00602(purH):phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase	2.1.2.3/3.5.4.10	-	-	COG0138	1	0
+purK	80.75	5-carboxyaminoimidazole ribonucleotide synthaseK01589(purK):5-(carboxyamino)imidazole ribonucleotide synthase	6.3.4.18	-	-	COG0026/COG4770	1	1
+purL	80.8	Phosphoribosylformylglycinamidine synthaseK01952(PFAS, purL):phosphoribosylformylglycinamidine synthase|K23269(purL):phosphoribosylformylglycinamidine synthase subunit PurL	6.3.5.3	-	-	COG0046/COG0047/COG1372	2	1
+purS	71.4	Phosphoribosylformylglycinamidine synthase subunit PurSK23264(purS):phosphoribosylformylglycinamidine synthase subunit PurS	6.3.5.3	-	-	COG1828	0	1
+pyk	94.6666666666667	Pyruvate kinaseK00873(PK, pyk):pyruvate kinase	2.7.1.40	-	-	COG0469/COG0034	3	0
+pyrF	62.7	Orotidine 5'-phosphate decarboxylaseK01591(pyrF):orotidine-5'-phosphate decarboxylase	4.1.1.23	-	-	COG0284/COG0194	1	1
+pyrG	82.45	CTP synthaseK01937(pyrG, CTPS):CTP synthase	6.3.4.2	-	-	COG0504	2	0
+rffH	93.9	Glucose-1-phosphate thymidylyltransferaseK00973(rfbA, rmlA, rffH):glucose-1-phosphate thymidylyltransferase	2.7.7.24	-	-	COG1209/COG1208/COG0110	0	1
+ribE	79.6	Riboflavin synthaseK00793(ribE, RIB5):riboflavin synthase	2.5.1.9	-	-	COG0307	1	0
+ribF	77.6	Riboflavin kinase|FMN adenylyltransferaseK11753(ribF):riboflavin kinase / FMN adenylyltransferase	2.7.1.26/2.7.7.2	-	-	COG0196	1	0
+rmlA	61.2	Glucose-1-phosphate thymidylyltransferaseK00973(rfbA, rmlA, rffH):glucose-1-phosphate thymidylyltransferase	2.7.7.24	-	-	COG1208/COG1209/COG0654	1	0
+rpe	80	Ribulose-phosphate 3-epimeraseK01783(rpe, RPE):ribulose-phosphate 3-epimerase	5.1.3.1	-	-	COG0036/COG1407	1	1
+serA	90.6	D-3-phosphoglycerate dehydrogenase / 2-oxoglutarate reductaseK00058(serA, PHGDH):D-3-phosphoglycerate dehydrogenase / 2-oxoglutarate reductase|K17050(serA, clrA):selenate/chlorate reductase subunit alpha	1.1.1.95/1.1.1.399/1.97.1.9/1.97.1.1	-	-	COG0111/COG0075/COG1052	2	1
+serB	84	Phosphoserine phosphataseK01079(serB, PSPH):phosphoserine phosphatase|K17051(serB, clrB):selenate/chlorate reductase subunit beta	3.1.3.3/1.97.1.9/1.97.1.1	-	-	COG0560/COG0463/COG0317/COG1340/COG3830	1	0
+sod	77.65	Superoxide dismutase-	-	-	-	COG0605	2	0
+soxA	88.3833333333333	Sarcosine oxidaseK00302(soxA):sarcosine oxidase, subunit alpha|K17222(soxA):L-cysteine S-thiosulfotransferase|K24010(soxA):cytochrome aa3-type oxidase subunit II	1.5.3.1/2.8.5.2/7.1.1.4	-	-	COG0404/COG2141/COG0446/COG0607/COG3383/COG3258/COG1622	3	3
+soxB-K00303	87.8	Sarcosine oxidaseK00303(soxB):sarcosine oxidase, subunit beta	1.5.3.1	-	-	-	1	0
+sseA	82.9	Thiosulfate sulfurtransferase|3-mercaptopyruvate sulfurtransferaseK01011(TST, MPST, sseA):thiosulfate/3-mercaptopyruvate sulfurtransferase	2.8.1.1/2.8.1.2	-	-	COG0454/COG2897/COG1893/COG1397/COG0117	1	0
+ssuB	98	Sulfonate transport system ATP-binding proteinK15555(ssuB):sulfonate transport system ATP-binding protein	7.6.2.14	-	-	COG1116/COG0715/COG0600	1	0
+sucC	76	Succinate--CoA ligaseK01903(sucC):succinyl-CoA synthetase beta subunit	6.2.1.5	-	-	COG0045	1	0
+sugB	59.6	Trehalose transport system permease proteinK10238(thuG, sugB):trehalose/maltose transport system permease protein	-	-	-	COG0395/COG1653	0	1
+suhB	67.3	Inositol-1-monophosphatase|Fructose-1,6-bisphosphataseK01092(E3.1.3.25, IMPA, suhB):myo-inositol-1(or 4)-monophosphatase	3.1.3.25	-	-	COG0483/COG0317	1	0
+sulP	69.4	Sulfate permease-	-	-	-	COG0659/COG0288	1	0
+tal	71.4	Phenylalanine/tyrosine ammonia-lyaseK19652(tal):dTDP-6-deoxy-L-talose 4-dehydrogenase [NAD(P)+	1.1.1.344	-	-	COG0176/COG0166	1	0
+tctA	80.9333333333333	Tricarboxylic transportK07793(tctA):putative tricarboxylic transport membrane protein	-	-	-	COG3333	2	1
+tdh	98	L-threonine 3-dehydrogenaseK00060(tdh):threonine 3-dehydrogenase	1.1.1.103	-	-	COG1063/COG0451/COG0473	0	1
+thyX	83.6	Flavin-dependent thymidylate synthaseK03465(thyX, thy1):thymidylate synthase (FAD)	2.1.1.148	-	-	COG1351	1	1
+trxB	63.3	thioredoxin reductaseK00384(trxB, TRR):thioredoxin reductase (NADPH)	1.8.1.9	-	-	COG0492	0	1
+ugpA	64.9	Sn-glycerol 3-phosphate transport system permease proteinK05814(ugpA):sn-glycerol 3-phosphate transport system permease protein	-	-	-	COG1175/COG4284	1	1
+ugpC	68.1	Sn-glycerol 3-phosphate transport system ATP-binding proteinK05816(ugpC):sn-glycerol 3-phosphate transport system ATP-binding protein	7.6.2.10	-	-	COG3842/COG3839	2	0
+ugpE	57.1	Sn-glycerol 3-phosphate transport system permease proteinK05815(ugpE):sn-glycerol 3-phosphate transport system permease protein	-	-	-	COG0395	1	0
+ureC	96	UreaseK01428(ureC):urease subunit alpha	3.5.1.5	-	-	COG0804	1	1
+vipA	82	Polysaccharide biosynthesis proteinK15476(vipA):VPS inhibitor protein A|K22926(tviB, vipA):UDP-N-acetylglucosamine 6-dehydrogenase	1.1.1.136	-	-	COG0677/2AP5Q	1	0
+wbpO	84	UDP-N-acetyl-D-mannosamine dehydrogenase|UDP-N-acetyl-D-galactosamine dehydrogenaseK02474(wbpO):UDP-N-acetyl-D-glucosamine/UDP-N-acetyl-D-galactosamine dehydrogenase	1.1.1.136/1.1.1.-	-	-	COG0677	0	1
+wecE	77.1	dTDP-4-amino-4,6-dideoxygalactose transaminaseK02805(wecE, rffA):dTDP-4-amino-4,6-dideoxygalactose transaminase	2.6.1.59	-	-	COG0399	0	1
+yagS	83.55	Xanthine dehydrogenaseK11178(yagS):xanthine dehydrogenase YagS FAD-binding subunit	1.17.1.4	-	-	COG1319/COG0493	2	0

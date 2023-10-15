@@ -1,0 +1,168 @@
+#The number of genes in pathways
+Category	SubCategoryI	SubCategoryII	Genes	sample1	sample2
+Carbon Fixation	CH4	Aerobic oxidation	114	13	6
+Carbon Fixation	CH4	Anaerobic oxidation of methane (AOM)	96	4	2
+Carbon Fixation	CO	"Acetyl-CoA <=> CO, CoA"	6		
+Carbon Fixation	CO	"CO, Oxidized ferredoxin <=> CO2, Reduced ferredoxin"	5		
+Carbon Fixation	CO	"CO, Quinone <=> CO2, Hydroquinone"	5		
+Carbon Fixation	CO2	3-Hydroxypropionate Bicycle	30	1	1
+Carbon Fixation	CO2	3-Hydroxypropionate/4-Hydroxybutyrate Cycle	20	1	1
+Carbon Fixation	CO2	Calvin-Benson-Bassham Cycle	28	3	2
+Carbon Fixation	CO2	Dicarboxylate/4-hydroxybutyrate cycle	33	6	1
+Carbon Fixation	CO2	Reductive acetyl-CoA pathway	25	1	1
+Carbon Fixation	CO2	Reductive tricarboxylic acid cycle	14		
+Carbon Fixation	Photosynthesis	Cytochrome b6f complex	8		
+Carbon Fixation	Photosynthesis	Photosynthesis proteins	34		
+Carbon Fixation	Photosynthesis	Photosynthetic electron transport	4		
+Carbon Fixation	Photosynthesis	Photosynthetic phosphorylation	8	4	1
+Carbon Fixation	Photosynthesis	Photosystem I	16		
+Carbon Fixation	Photosynthesis	Photosystem II	25		
+Carbon Release	CH4	Aceticlastic methanogenesis	21	4	1
+Carbon Release	CH4	Central methanogenic pathway	121		
+Carbon Release	CH4	Hydrogenotrophic methanogenesis	22	1	
+Carbon Release	CH4	Methylotrophic methanogenesis	17		
+Carbon Release	CO	CO	23		
+Carbon Release	CO2	CO2	337	17	5
+Organic Biosynthesis	Amino acid	Alcohol	23	5	4
+Organic Biosynthesis	Amino acid	Aliphatic	66	7	3
+Organic Biosynthesis	Amino acid	Anionic	30	3	
+Organic Biosynthesis	Amino acid	Aromatic	22		
+Organic Biosynthesis	Amino acid	Aromatic side-chain	23		
+Organic Biosynthesis	Amino acid	Cationic	108	7	5
+Organic Biosynthesis	Amino acid	D-Amino acid	23		
+Organic Biosynthesis	Amino acid	L-Amino acid	41	5	3
+Organic Biosynthesis	Amino acid	Others	97	12	6
+Organic Biosynthesis	Amino acid	S side-chain	74	5	4
+Organic Biosynthesis	Amino acid	Se	6	3	2
+Organic Biosynthesis	Amino acid	beta-amino acid	16	1	
+Organic Biosynthesis	Antibiotic	Aminoglycoside antibotics	27		
+Organic Biosynthesis	Antibiotic	Beta-lactam	10		
+Organic Biosynthesis	Antibiotic	Glycopeptide	29		
+Organic Biosynthesis	Antibiotic	Tetracycline	32		
+Organic Biosynthesis	Carbohydrate	Disaccharide	2		
+Organic Biosynthesis	Carbohydrate	Monosaccharide	94	2	1
+Organic Biosynthesis	Carbohydrate	Oligosaccharide	16	1	1
+Organic Biosynthesis	Carbohydrate	Polysaccharide	5		
+Organic Biosynthesis	Carbohydrate	Pyruvate	101	12	4
+Organic Biosynthesis	Cofactor	Coenzyme	62	3	2
+Organic Biosynthesis	Cofactor	Porphyrin	108	6	2
+Organic Biosynthesis	Cofactor	Vitamin B	238	23	13
+Organic Biosynthesis	Cofactor	Vitamin E	6		
+Organic Biosynthesis	Cofactor	Vitamin K	18		
+Organic Biosynthesis	Glycan	Galactoarabinan	12	1	
+Organic Biosynthesis	Glycan	Glycolipid	4	1	
+Organic Biosynthesis	Glycan	Lipoarabinomannan	7		
+Organic Biosynthesis	Glycan	Lipopolysaccharide	61		
+Organic Biosynthesis	Glycan	O-linked	84	3	4
+Organic Biosynthesis	Glycan	Peptidoglycan	34	2	1
+Organic Biosynthesis	Lipid	Fatty acid	76	6	2
+Organic Biosynthesis	Lipid	Polyketide	235		
+Organic Biosynthesis	Nucleotide	Purine	87	9	6
+Organic Biosynthesis	Nucleotide	Pyrimidine	37	4	2
+Organic Biosynthesis	Organic sulfur	Link between inorganic and organic sulfur transformation	19	2	1
+Organic Biosynthesis	Organic sulfur	Organic sulfur transformation	35	3	1
+Organic Biosynthesis	Organic sulfur	Others	32	2	
+Organic Biosynthesis	Organophosphorus Compound	Organophosphorus Compound	34		1
+Organic Biosynthesis	Photosynthesis	ATPase	8	4	1
+Organic Biosynthesis	Photosynthesis	C4 cycle	4		
+Organic Biosynthesis	Photosynthesis	Calvin cycle	35	3	2
+Organic Biosynthesis	Photosynthesis	Photosynthetic pigment	22		
+Organic Biosynthesis	Secondary metabolite	Terpenoid	56		
+Organic Biosynthesis	Secondary metabolite	Tetracycline	27		
+Organic Biosynthesis	Secondary metabolite	Vancomycin	23		
+Organic Biosynthesis	Xenobiotics	Selenocompound	14	2	1
+Organic Degration	Amino acid	Alcohol	8		
+Organic Degration	Amino acid	Aliphatic	49	7	3
+Organic Degration	Amino acid	Anionic	18	1	
+Organic Degration	Amino acid	Aromatic	3		
+Organic Degration	Amino acid	Aromatic side-chain	15		
+Organic Degration	Amino acid	Cationic	29	3	2
+Organic Degration	Amino acid	D-Amino acid	17		
+Organic Degration	Amino acid	L-Amino acid	24		
+Organic Degration	Amino acid	S side-chain	11		
+Organic Degration	Amino acid	beta-amino acid	13		
+Organic Degration	Antibiotic	Antibiotic	56	1	
+Organic Degration	Aromatics	Aromatics	350	6	2
+Organic Degration	Carbohydrate	Alpha-galactans	20		
+Organic Degration	Carbohydrate	Arabinan	21		
+Organic Degration	Carbohydrate	Arabinose	16		
+Organic Degration	Carbohydrate	Beta-galactans	21		
+Organic Degration	Carbohydrate	Beta-mannan	24		
+Organic Degration	Carbohydrate	Cellulose	32		
+Organic Degration	Carbohydrate	Chitin	32		
+Organic Degration	Carbohydrate	Citrate cycle	39	6	2
+Organic Degration	Carbohydrate	Disaccharide	10		
+Organic Degration	Carbohydrate	Fermentation	34	3	1
+Organic Degration	Carbohydrate	Fucose	5		
+Organic Degration	Carbohydrate	Galactose	11		
+Organic Degration	Carbohydrate	Galacturonic acid	3		1
+Organic Degration	Carbohydrate	Glycan	20	1	
+Organic Degration	Carbohydrate	Glycolipid	2	1	
+Organic Degration	Carbohydrate	Glycolysis	68	10	5
+Organic Degration	Carbohydrate	Glyoxylate cycle	5	3	1
+Organic Degration	Carbohydrate	Hemicellulose	55		
+Organic Degration	Carbohydrate	Lactose	2		
+Organic Degration	Carbohydrate	Lipopolysaccharide	7		
+Organic Degration	Carbohydrate	Mannose	2		
+Organic Degration	Carbohydrate	Monosaccharide	188	7	3
+Organic Degration	Carbohydrate	Oxidative phosphorylation	112	11	5
+Organic Degration	Carbohydrate	Pectin	38		
+Organic Degration	Carbohydrate	Pentose phosphate	67	6	5
+Organic Degration	Carbohydrate	Peptidoglycan	8		
+Organic Degration	Carbohydrate	Polysaccharide	23	1	
+Organic Degration	Carbohydrate	Pyruvate	26	4	1
+Organic Degration	Carbohydrate	Starch	45	1	
+Organic Degration	Carbohydrate	Sucrose	3		
+Organic Degration	Carbohydrate	Xylan	36		
+Organic Degration	Carbohydrate	Xyloglucan	40		
+Organic Degration	Carbohydrate	Xylose-dehydratase	3		
+Organic Degration	Carbohydrate	Xylose-isomerase	2		
+Organic Degration	Carbohydrate	Xylose-oxidoreductase	2		
+Organic Degration	Cofactor	Coenzyme	11		
+Organic Degration	Cofactor	Porphyrin	6		
+Organic Degration	Cofactor	Vitamin A	4	1	1
+Organic Degration	Cofactor	Vitamin B	136	6	6
+Organic Degration	Cofactor	Vitamin E	36		
+Organic Degration	Cofactor	Vitamin K	3		
+Organic Degration	Lipid	Fatty acid	69	6	4
+Organic Degration	Lipid	Polyketide	7		
+Organic Degration	Methane-aerobic	Oxidation of formaldehyde	10	1	1
+Organic Degration	Methane-aerobic	Oxidation of formate	12		
+Organic Degration	Methane-aerobic	Oxidation of merthane and C1 compounds	50	1	
+Organic Degration	Methane-aerobic	RuMP pathway	15	2	1
+Organic Degration	Methane-aerobic	serine cycle	29	9	4
+Organic Degration	Methane-anaerobic	Anaerobic oxidation of methane (AOM)	96	4	2
+Organic Degration	Nucleotide	Purine	57	6	2
+Organic Degration	Nucleotide	Pyrimidine	45	3	1
+Organic Degration	Organic sulfur	Link between inorganic and organic sulfur transformation	26	2	1
+Organic Degration	Organic sulfur	Organic sulfur transformation	44	4	2
+Organic Degration	Organic sulfur	Others	34	2	
+Organic Degration	Organophosphorus Compound	Organic phosphoester hydrolysis	13	2	1
+Organic Degration	Organophosphorus Compound	Others	6		
+Organic Degration	Organophosphorus Compound	Phosphonate and phosphinate metabolism	23	1	1
+Organic Degration	Secondary metabolite	Secondary metabolite	67	1	
+Organic Degration	Xenobiotics	Herbicide	12	1	1
+Organic Degration	Xenobiotics	Lignin	475	12	5
+Organic Degration	Xenobiotics	Organic pollutant	114	2	1
+Organic Degration	Xenobiotics	Plastics	19	1	1
+Organic Degration	Xenobiotics	Selenocompound	7		1
+Organic Degration	Xenobiotics	Styrene	22		
+Organic Transformation	Amino acid	D-Amino acid	19		
+Organic Transformation	Antibiotic	Aminoglycoside antibotics	20		
+Organic Transformation	Antibiotic	Lipopeptide antibiotics	26		
+Organic Transformation	Antibiotic	Macrolide-lincosamide-streptogramin	3		
+Organic Transformation	Antibiotic	Polypeptide antibiotic	13		
+Organic Transformation	Antibiotic	Viomycin	7		
+Organic Transformation	Carbohydrate	Carbohydrate	8		
+Organic Transformation	Glycan	Galactoarabinan	4		
+Organic Transformation	Glycan	Glycolipid	10	1	
+Organic Transformation	Glycan	Lipopolysaccharide	78	1	
+Organic Transformation	Glycan	Peptidoglycan	50	4	1
+Organic Transformation	Lipid	Fatty acid	38	1	
+Organic Transformation	Lipid	Polyketide	145		
+Organic Transformation	Protein	Protein	13		
+Organic Transformation	Xenobiotics	Lignin	248	9	4
+Transport	ABC transport	ABC transport	331	12	7
+Transport	Phosphotransferase system	Phosphotransferase system	86	4	2
+Transport	Transport system	Transport system	6		
+Transport	Two-component system	Two-component system	87	9	7
