@@ -1,4 +1,4 @@
-/*以下定义definition*/
+
 #header {
   position: fixed;
   top: 0;
@@ -11,18 +11,17 @@
   z-index: 1000;
 }
 .h1_df {
-	width: 100%;
+    width: 100%;
     background-color: #375D80;
-    font-size: 36px; /* 设置字体大小 */
-    color: white; /* 设置文字颜色 */
-    text-align: left; /* 设置文字居中 */
-	margin-top: 0px;
-    margin-bottom: 10px; /* 添加底部间距 */
-	margin-left: 0px;
+    font-size: 36px;
+    color: white; 
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
     padding: 20px 10px;
 }
 
-/*左侧索引栏*/
 #menu_df {
 	position: fixed;
 	width: 150px;
@@ -33,83 +32,78 @@
 	padding-top: 10px;
 	padding-right: 5px;
 	padding-left: 5px;
-	padding-bottom: 10px; /* 内边距，用于创建间距 */
+	padding-bottom: 10px;
 	height: 80%;
 	border: 2px solid #375D80;
 	margin-left: 5px;
 	margin-right: 2px;
-	overflow-y: auto; /* 显示垂直滚动条 */
+	overflow-y: auto; 
 	overflow-x: auto;
 }
 
 #menu_df a {
-	display: block; /* 将链接元素转换为块级元素，以占据整个宽度 */
+	display: block; 
 	padding-top: 5px;
 	padding-right: 0px;
 	padding-left: 0px;
-	padding-bottom: 5px; /* 链接内边距 */
-	font-size: 15px; /* 字体大小 */
-	text-decoration: none; /* 移除下划线 */
-	color: black; /* 链接文本颜色 */
+	padding-bottom: 5px; 
+	font-size: 15px; 
+	text-decoration: none; 
+	color: black; 
 	font-family: Verdana, Arial, sans-serif;
 	line-height:inherit;
 	z-index: 100;
-
 }
 
 #menu_df a:hover {
-    background-color: #3B7197; /* 鼠标悬停时的背景颜色 */
-	
+    background-color: #3B7197; 
 }
 
 .ul_level{
-  margin-top: 2px; /* 设置上外部间距为 10 像素 */
-  margin-bottom: 2px; /* 设置下外部间距为 10 像素 */
+  margin-top: 2px;
+  margin-bottom: 2px; 
 }
-/* 右侧边框 */
+
 .box_df {
 	margin-left: 170px;
-	white-space: nowrap; /* 防止文本换行 */
+	white-space: nowrap; 
 	margin-top: 10px;
 }
-/*DB链接样式*/
+
 .linkkegg {
-  color: cornflowerblue; /* 设置第一个链接的字体颜色为红色 */
-}
-.linkkegg:hover {
-  color: blue; /* 设置链接在鼠标悬停时的字体颜色为蓝色 */
+  color:#8B4513;
 }
 .linkbrenda {
- color: blueviolet;	
+ color:	#4169E1;	
 }
 .linkcazy{
-  color:#DC143C;
+  color:#B22222;
 }
 .linkcog{
-  color:#97C6C6
+  color:#008000;
 }
-/* 定义分类注释 */
+
 .optionbox1 {
-	background-color: #f2f2f2; /* 使用浅灰色作为背景颜色 */
+	background-color: #f2f2f2;
 	width: 95.5%;
-	padding-left: 0px; /* 添加内边距以增加文本与边框的间距 */
+	padding-left: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-left: 55px;
 	margin-bottom: 0px;
-	border-radius: 0px; /* 添加圆角 */
+	border-radius: 0px; 
 	box-sizing: border-box;
 }
 
 .optionbox {
-	background-color: #f2f2f2; /* 使用浅灰色作为背景颜色 */
+	background-color: #f2f2f2;
 	width: 95%;
-	padding-left: 0px; /* 添加内边距以增加文本与边框的间距 */
+	padding-left: 0px; 
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-left: 55px;
 	margin-bottom: 0px;
-	border-radius: 5px; /* 添加圆角 */
+	border-radius: 5px; 
 	box-sizing: border-box;
 }
 
@@ -156,7 +150,7 @@
 	margin-top: 2px;
 	margin-left: 40px;
 	line-height: 1.5;
-	text-indent: 20px; /*首行缩进*/
+	text-indent: 20px;
 }
 .gene_d5 {
   font-size: 14px;
