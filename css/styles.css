@@ -1,42 +1,35 @@
 body {
     font-family:Verdana, Arial, sans-serif;
-	font-size: 16px;
+    font-size: 16px;
 }
 
-
-
-/* 使用CSS美化大标题 */
 h1 {
     background-color: #375D80;
-    font-size: 36px; /* 设置字体大小 */
-    color: white; /* 设置文字颜色 */
-    text-align: left; /* 设置文字居中 */
-    margin-bottom: 10px; /* 添加底部间距 */
+    font-size: 36px; 
+    color: white; 
+    text-align: left; 
+    margin-bottom: 10px; 
     padding: 20px;
 }
-
 h2 { 
-  font-size: 24px; /* 设置字体大小 */
-  color: #375D80; /* 设置文字颜色 */
-  text-align: left; /* 设置文字居中 */
+  font-size: 24px;
+  color: #375D80; 
+  text-align: left;
   margin-left: 45px;
   margin-bottom: 0px;
   padding: 10px;
 }
-
 h3 {
-  font-size: 20px; /* 设置字体大小 */
+  font-size: 20px; 
   font-weight: bold;
-  color: #375D80; /* 设置文字颜色 */
-  text-align: left; /* 设置文字居中 */
+  color: #375D80; 
+  text-align: left; 
   margin-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 5px;
 }
 
-
-/* 保证跟左侧有距离 */
 .text{
     font-size: 16px;
     color: black;
@@ -45,66 +38,58 @@ h3 {
     margin-left: 55px;
 	margin-top: 0px;
 }
-/* 二级标题 */
+
 .subhead {
-    font-size: 26px; /* 设置字体大小 */
-    color: black; /* 设置文字颜色 */
-    text-align: left; /* 设置文字居中 */
-    margin-bottom: 10px; /* 添加底部间距 */
+    font-size: 26px;
+    color: black; 
+    text-align: left;
+    margin-bottom: 10px; 
     margin-top: 0px; 
     padding-top: 0px;
     padding-left: 20px;
     font-weight: bold;
 }
-/*左侧索引栏*/
 #menuleft {
-	width: 150px; /* 左侧索引栏的宽度 */
-	background-color: white; /* 背景颜色 */
+	width: 150px;
+	background-color: white; 
 	font-size: 20px;
 	text-align: center;
 	margin-top: 10px;
 	padding-top: 10px;
 	padding-right: 0px;
 	padding-left: 15px;
-	padding-bottom: 10px; /* 内边距，用于创建间距 */
-	float: left; /* 左浮动，使其位于页面左侧 */
+	padding-bottom: 10px; 
+	float: left;
 	border: 2px solid #375D80;
 }
 
-/* 设置索引栏内链接的样式 */
 #menuleft a {
-	display: block; /* 将链接元素转换为块级元素，以占据整个宽度 */
+	display: block; 
 	padding-top: 10px;
 	padding-right: 0px;
 	padding-left: 5px;
-	padding-bottom: 10px; /* 链接内边距 */
-	font-size: 18px; /* 字体大小 */
-	text-decoration: none; /* 移除下划线 */
-	color: black; /* 链接文本颜色 */
+	padding-bottom: 10px;
+	font-size: 18px; 
+	text-decoration: none;
+	color: black;
 	font-family: Verdana, Arial, sans-serif;
 	line-height: 1;
-    
 }
-
 #menuleft a:hover {
-    background-color: #3B7197; /* 鼠标悬停时的背景颜色 */
+    background-color: #3B7197; 
 }
-
-
 a {
-  color: black; /* 修改链接文本颜色 */
-  text-decoration: none; /* 去掉下划线 */
+  color: black;
+  text-decoration: none; 
 }
 a:hover {
-  text-decoration: underline; /* 鼠标悬停时显示下划线 */
-  color:#007bff;
+  text-decoration: underline;
+  color:blue;	
 }
-/*右侧方框*/
 
-/*右侧方框分割*/
 .box1 {
-    margin-left: 20px; /* 与左侧方框 */
-    margin-bottom: 20px; /* 方框之间的垂直间距 */
+    margin-left: 20px;
+    margin-bottom: 20px; 
     width: 1100px; 
     float: left;
     background-color: white;
@@ -122,20 +107,19 @@ a:hover {
     box-sizing: border-box;
     border: 0px solid #375D80
 }
-
 /*option*/
 .graybox {
-    background-color: #f2f2f2; /* 使用浅灰色作为背景颜色 */
+    background-color: #f2f2f2;
     width: 80%;
-    padding-left: 0px; /* 添加内边距以增加文本与边框的间距 */
+    padding-left: 0px;
     padding-bottom: 10px;
     margin-left: 55px;
     margin-bottom: 40px;
-    border: 0px solid #ccc; /* 添加边框 */
-    border-radius: 5px; /* 添加圆角 */
+    border: 0px solid #ccc; 
+    border-radius: 5px; 
     box-sizing: border-box;
-    max-height: auto; /* 设置最大高度，超出时会显示滚动条 */
-    overflow-y: auto; /* 显示垂直滚动条 */
+    max-height: auto; 
+    overflow-y: auto; 
     overflow-x: auto; 
     height:auto;
 }
@@ -143,7 +127,7 @@ a:hover {
 .td-left {
     width:150px;
     padding-left: 0px;
-    vertical-align: top; /* 顶端对齐 */
+    vertical-align: top; 
     text-align: left;
     line-height: 30px;
 }
@@ -151,38 +135,34 @@ a:hover {
 .td-right {
 	width: 1200px;
     padding-left: 0px;
-    vertical-align: top; /* 顶端对齐 */
+    vertical-align: top;
     line-height: 30px;
 }
-
-/* 为表格的tr添加样式 <table class = "top-align">*/
 .top-align tr {
     vertical-align: top;
 }
 
-/*分层*/
 .level {
   width: 100%;
   display: flex;
-  flex-direction: column; /* 上下布局 */
+  flex-direction: column;
   padding-left: 0px;
-  text-align: justify; /* 文本双端对齐 */
-  white-space: nowrap; /* 防止文本换行 */
+  text-align: justify;
+  white-space: nowrap; 
 }
 
 .level p{
 	margin-top: 2px;
-	margin-bottom: 0px;
-	
+	margin-bottom: 0px;	
 }
 
 .box-container {
 	display: flex;
-	flex-direction: column; /* 上下布局 */
+	flex-direction: column;
 	padding-left: 0px;
 	overflow-x: scroll; /**/
 }
-/*分层展示*/
+
 .level1 {
 	font-size: 18px;
 	font-weight: bold;
@@ -218,22 +198,17 @@ a:hover {
   text-align: left; 
   margin-left:60px;
 }
-
 .infodetail {
   font-size: 16px;
   text-align: left; 
   padding: 20px;
 }
 
-
-
-/* 更改页面图片大小 */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/*字体*/
 p{
   font-size: 16px;
   color: black;
@@ -242,12 +217,10 @@ p{
   margin-left: 55px;
 }
 
-/* 折叠或显示 */
 .hidden-content {
   display: none;
 }
 
-    /* 修改鼠标样式为手型 */
 .clickable {
   cursor: pointer;
   color: black;
