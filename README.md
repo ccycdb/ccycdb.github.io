@@ -1,6 +1,5 @@
 # CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes
 <!-- button -->
-![Static Badge](https://img.shields.io/badge/version-1.0)
 
 **Please see https://ccycdb.github.io/ for more details**
 
@@ -9,10 +8,10 @@ Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon
 
 ## Contents
 
-- [Installation](#step-0.-prepare-your-files)
-- [Options](#Options)
-- [Examples](#Examples)
-- [Contact](#Contact)
+- [[Usage and Examples]](#usage)
+- [Options]
+- [Examples](#examples)
+- [Contact](#contact)
 
 ### Usage and Examples
 
@@ -33,7 +32,7 @@ Contigs generated through metagenome assmebly by (e.g., MEGAHIT, MetaSPAdes, SPA
 BLAST table (delimited with "\t") generated through sequences similarity searching tools (e.g., BLAST, USEARCH, DIAMOND).
 
 ---
-#### Step 1. Download
+#### Step 1. Download `#install`
 ```
 $ wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1
 
