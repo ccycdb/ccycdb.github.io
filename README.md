@@ -1,6 +1,17 @@
-# CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes (https://ccycdb.github.io/)
+# CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes
+<b> Please see https://ccycdb.github.io/ for more details</b>
+
 CCycDB is a knowledge-based functional gene database for accurate metagenomic profiling of carbon cycling microbial communities. CCycDB contains 4,676 gene families within 6 categories. These gene families are further categorized into 45 sub-categories within sub-category I and 188 sub-categories within sub-category II with a total of 10,991,724 targeted sequences. A series of validations demonstrated that CCycDB outperformed large public orthology databases in terms of coverage, specificity, and accuracy, and can be used to accurately profile carbon cycling microbial communities in real metagenomic datasets.
 Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes" for more details.
+
+![NSFW Filter popup] (https://github.com/ccycdb/ccycdb.github.io/tree/main/image/FlowChart.jpg)
+
+## Contents
+
+- [Installation](#Installation)
+- [Options](#Options)
+- [Examples](#Examples)
+- [Contact](#Contact)
 
 <b>Usage and Examples</b>
 
