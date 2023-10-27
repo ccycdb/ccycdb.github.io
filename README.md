@@ -138,10 +138,8 @@ $ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond -norm 1 
 - FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt
 
 - SEQ2GENE/$sample.SEQ2GENE.txt
-<br>
 
-### Contact us
- 
+
 <p><b>Depending on the tools used, you may want to cite also:</b></p>
 
 DIAMOND: Buchfink B, Xie C, Huson D H. Fast and sensitive protein alignment using DIAMOND[J]. Nature methods, 2015, 12(1): 59-60.
@@ -153,3 +151,7 @@ USEARCH: Edgar R C. Search and clustering orders of magnitude faster than BLAST[
 CSVTK: Csvtk—CSV/TSV Toolkit. Available online: https://bioinf.shenwei.me/csvtk/
 
 SEQKIT: Shen W, Le S, Li Y, et al. SeqKit: a cross-platform and ultrafast toolkit for FASTA/Q file manipulation[J]. PloS one, 2016, 11(10): e0163962.
+
+### Contact us
+ Email: tuqichao@sdu.edu.cn or jiayinzhou@mail.sdu.edu.cn
+
