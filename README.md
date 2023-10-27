@@ -2,7 +2,7 @@
 CCycDB is a knowledge-based functional gene database for accurate metagenomic profiling of carbon cycling microbial communities. CCycDB contains 4,676 gene families within 6 categories. These gene families are further categorized into 45 sub-categories within sub-category I and 188 sub-categories within sub-category II with a total of 10,991,724 targeted sequences. A series of validations demonstrated that CCycDB outperformed large public orthology databases in terms of coverage, specificity, and accuracy, and can be used to accurately profile carbon cycling microbial communities in real metagenomic datasets.
 Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes" for more details.
 <b>Usage and Examples</b>
-<b >Step 0. Prepare your files <b>
+<b >Step 0. Prepare your files </b>
 Input files supports 3 types
 1. Read-based
 Raw reads (clean reads) or Merged Reads (Forward and reverse reads were merged into longer sequences by the program e.g. PEAR)
