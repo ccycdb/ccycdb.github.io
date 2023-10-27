@@ -8,8 +8,8 @@ Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon
 
 ## Contents
 
-- [[Usage and Examples]](#usage)
-- [Options]
+- [[Usage and Examples]](#usage-and-examples)
+- [Options](#options)
 - [Examples](#examples)
 - [Contact](#contact)
 
@@ -47,7 +47,7 @@ $ git clone https://github.com/ccycdb/CCycDB.PL
 perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]
 ```
 
-**[Options:]**
+### Options
 ```
 -situation  : The situation for input files (read-based|assembly-based|tabular).
 
