@@ -90,7 +90,7 @@ system ("mkdir $outdir/tmp") if (!-e "$outdir/tmp" && $situation eq "assembly-ba
 #### Referseq2Gene--id2genemap ####
 my %id2gene;
 my (@genes,%ha);
-open(FILE, "$workdir/data/id2gene.CCycDB.map") || die "#1 cannot open id2gene.map\n";
+open(FILE, "$workdir/data/id2gene.CCycDB.map") || die "#ERROR: cannot open id2gene.map !\n";
 print "Reading id2genemap ...\n";
 while (<FILE>) {
   chomp;
@@ -105,7 +105,7 @@ my @genelist=grep{++$ha{$_}<2}@genes;
 ### Annotation ###
 print "Reading annotation ...\n";
 my %annotation;
-open(ANNO, "$workdir/data/annotations.txt") || die "# cannot open annotation.txt";
+open(ANNO, "$workdir/data/annotations.txt") || die "#ERROR: cannot open annotation.txt ! \n";
 while (<ANNO>) {
   chomp;
   my @items = split("\t", $_);
@@ -133,7 +133,7 @@ system ("$seqkit -j $dthread stat $workdir/*$filetype >>$workdir/sampleinfo.txt"
 
 
 my (%size,@sizes);
-open( FILE, "$workdir/sampleinfo.txt" ) || die "#1\n";
+open( FILE, "$workdir/sampleinfo.txt" ) || die "#ERROR: cannot open $workdir/sampleinfo.txt !\n";
 while (<FILE>) {
   chomp;
   $_=~ s/,//g;
@@ -167,9 +167,9 @@ if ($situation ne "tabular" && $method eq "diamond") {
   }
   
 }elsif ($situation ne "tabular" && $method eq "usearch") {
-  die "Please specify the location of usearch!" if !-e $usearch;
+  die "#ERROR: Please specify the location of usearch!" if !-e $usearch;
 	if ($filetype =~ /gz/) {
-	  die "Only fastq and fasta files are supported by usearch!\n";
+	  die "#ERROR: Only fastq and fasta files are supported by usearch!\n";
 	}
 	@files = glob("$workdir/*$filetype");
 	foreach my $file (@files) {
@@ -181,10 +181,10 @@ if ($situation ne "tabular" && $method eq "diamond") {
   }
   
 }elsif ($situation ne "tabular" && $method eq "blast") {
-  die "Please specify the location of blast and/or formatdb!" if !-e $blast;
+  die "#ERROR: Please specify the location of blast and/or formatdb! \n" if !-e $blast;
   if ($filetype ne /fasta|fa/) {
   #if ($filetype =~ /gz|fastq/) {
-    die "Only fasta files(filetype is \"fasta|fa\") are supported by blast program!";
+    die "#ERROR: Only fasta files(filetype is \"fasta|fa\") are supported by blast program!\n";
   }
   @files = glob("$workdir/*$filetype");
   system("$blast/makeblastdb -in $workdir/data/CCycDB.database -dbtype prot -out $workdir/data/CCycDB.blast");
@@ -205,7 +205,7 @@ my (%identity,%abundance,%samples);
 my @sfiles = glob("$workdir/*diamond") if $method eq "diamond";
 @sfiles = glob("$workdir/*usearch") if $method eq "usearch";
 @sfiles = glob("$workdir/*blast")   if $method eq "blast";
-die "No diamond/usearch/blast files were detected!\n" if $#sfiles == -1;
+die "#ERROR: No diamond/usearch/blast files were detected!\n" if $#sfiles == -1;
 
 if($situation ne "assembly-based"){
   foreach my $file (@sfiles) {
@@ -214,18 +214,18 @@ if($situation ne "assembly-based"){
 	my $sample = $1;
 	$samples{$sample} = 1;
 
-	open(DIA, "$file") || die "#cannot open $file\n";
-	open(SEQ2G, ">$outdir/SEQ2GENE/$sample.SEQ2G.txt") || die "#cannot open $outdir/SEQ2GENE/$sample.SEQ2GENE.txt\n";
+	open(DIA, "$file") || die "#ERROR: cannot open $file !\n";
+	open(SEQ2G, ">$outdir/SEQ2GENE/$sample.SEQ2G.txt") || die "#ERROR: cannot open $outdir/SEQ2GENE/$sample.SEQ2GENE.txt\n";
 	while (<DIA>) {
 	  chomp;
 	  my @items = split("\t", $_);
 	  my $gene  = $id2gene{$items[1]};
 	  $diamond{$items[0]} = $items[1];
-	  #if (!$hit{$items[0]}) {
+	  if (!$hit{$items[0]}) {
 		$abundance{$sample}{$gene}++         if $gene;
 		push(@{$identity{$gene}}, $items[2]) if $gene;
-		#$hit{$items[0]} = 1;
-	  #}
+		$hit{$items[0]} = 1;
+	  }
 	  print SEQ2G "$items[0]\t$id2gene{$diamond{$items[0]}}\n" if $id2gene{$diamond{$items[0]}};
 	}
 	close DIA;
@@ -238,8 +238,8 @@ if($situation ne "assembly-based"){
   my $sample = $1;
   $samples{$sample} = 1;
 
-  open( DIA, "$file" ) || die "#cannot open ORF2GENE.txt\n\n";
-  open(ORF2G, ">$outdir/ORF2GENE/$sample.ORF2GENE.txt") || die "#cannot open $outdir/ORF2GENE/$sample.ORF2GENE.txt\n";
+  open( DIA, "$file" ) || die "#ERROR: cannot open ORF2GENE.txt !\n";
+  open(ORF2G, ">$outdir/ORF2GENE/$sample.ORF2GENE.txt") || die "ERROR: #cannot open $outdir/ORF2GENE/$sample.ORF2GENE.txt\n";
   while (<DIA>) {
 	chomp;
 	my @items = split( "\t", $_ );
@@ -257,31 +257,31 @@ if($situation ne "assembly-based"){
   
   if ($tpm == 1){
 	  print "Please make sure the file of $workdir/$sample.tpm exists...\n";
-	my (@tgene,%ta);
-	open( VTPM, "$workdir/$sample.tpm" ) || die "#$workdir/$sample.tpm needed if -tpm 1\n";
+	my (@tgene,%ta,%tabundance);
+	open( VTPM, "$workdir/$sample.tpm" ) || die "ERROR: #$workdir/$sample.tpm needed if -tpm 1\n";
 	
 	while (<VTPM>) {
 	chomp;
 	my @items = split( "\t", $_ );
 	  if ($diamond{$items[0]}&&$id2gene{$diamond{$items[0]}}){
-		  $abundance{$id2gene{$diamond{$items[0]}}} += $items[3];
+		  $tabundance{$id2gene{$diamond{$items[0]}}} += $items[3];
 		  push(@tgene,$id2gene{$diamond{$items[0]}});
 	  }
 	}
 	
 	my @uniqtg=grep{++$ta{$_}<2}@tgene;
-	open( TPM, ">$outdir/tmp/$sample\.tpm.txt" ) || die "#1\n";
+	open( TPM, ">$outdir/tmp/$sample\.tpm.txt" ) || die "#ERROR: cannote open $outdir/tmp/$sample\.tpm.txt !\n";
 	print TPM "Gene\t$sample\n";
 	foreach my $key (sort @uniqtg){
-	  print TPM "$key\t$abundance{$key}\n" if $abundance{$key};
-	  print TPM "$key\t0\n" if !$abundance{$key};
+	  print TPM "$key\t$tabundance{$key}\n" if $tabundance{$key};
+	  print TPM "$key\t0\n" if !$tabundance{$key};
 	}
 	close TPM;
 	close VTPM;
   }
  }
- system ("$csvtk join -t -f 1 -O --na 0 $outdir/tmp/*txt.tmp >$outdir/ORF2GENE.tpm") if -e "$outdir/tmp";
- #system ("rm $outdir/tmp/*tpm.tmp");
+ system ("$csvtk join -t -f 1 -O --na 0 $outdir/tmp/*tpm.txt >$outdir/ORF2GENE.tpm") if -e "$outdir/tmp";
+ #system ("rm $outdir/tmp/*tpm.txt");
 }
 
 @sizes = sort { $a <=> $b } @sizes;
@@ -293,7 +293,7 @@ my @samplelist = sort keys %samples;
 #### Not randomsampling ####
 if ($norm == 0){
  print "not random sampling ...\t";
- open(FOUT, ">$outdir/FunProfile_$situation\_$method\_norandom.txt") || die "#5 cannot write profile.txt\n";
+ open(FOUT, ">$outdir/FunProfile_$situation\_$method\_norandom.txt") || die "#ERROR: cannot write profile.txt!\n";
  print FOUT "#Not random sampling\n";
  print FOUT "Gene\tMean Identity\tAnnotation\tKO\tBrenda\tCAZY\tCAZY_group\tCOG\t",join("\t", @samplelist), "\n";
  foreach my $gkey (sort keys %identity){
