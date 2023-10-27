@@ -14,7 +14,7 @@ Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon
 - [Usage and Examples](#usage-and-examples)
 - [Options](#options)
 - [Examples](#examples)
-- [Contact](#contact)
+- [Contact](#contact-us)
 
 ### Usage and Examples
 
@@ -35,7 +35,7 @@ Contigs generated through metagenome assmebly by (e.g., MEGAHIT, MetaSPAdes, SPA
 BLAST table (delimited with "\t") generated through sequences similarity searching tools (e.g., BLAST, USEARCH, DIAMOND).
 
 
-#### Step 1. Download `#install`
+#### Step 1. Download
 ```
 $ wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1
 
@@ -92,8 +92,8 @@ $ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl
 $ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output
 
 ```
-<p> Output:</p>
 
+&nbsp;**[output:]**
 <li>FunProfile_read-based_$method_random.txt  OR  FunProfile_read-based_$method_norandom.txt:</li>
 
 ```
@@ -118,8 +118,7 @@ $ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s 
 $ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output
 ```
 
-<p>Output:</p>
-
+&nbsp;**[output:]**
 - FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt
 
 - ORF2GENE/$sample.ORF2GENE.txt
@@ -135,13 +134,13 @@ $ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond  -norm 0
 $ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output
 ```
 
-<p>Output:</b>
-
+&nbsp;**[output:]**
 - FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt
 
 - SEQ2GENE/$sample.SEQ2GENE.txt
 <br>
 
+### Contact us
  
 <p><b>Depending on the tools used, you may want to cite also:</b></p>
 
