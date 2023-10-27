@@ -1,7 +1,7 @@
-# ccycdb.github.io
+# CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes (https://ccycdb.github.io/)
 CCycDB is a knowledge-based functional gene database for accurate metagenomic profiling of carbon cycling microbial communities. CCycDB contains 4,676 gene families within 6 categories. These gene families are further categorized into 45 sub-categories within sub-category I and 188 sub-categories within sub-category II with a total of 10,991,724 targeted sequences. A series of validations demonstrated that CCycDB outperformed large public orthology databases in terms of coverage, specificity, and accuracy, and can be used to accurately profile carbon cycling microbial communities in real metagenomic datasets.
 Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes" for more details.
-<hr>
+
 <b>Usage and Examples</b>
 
 <b >Step 0. Prepare your files </b><br>
@@ -23,26 +23,40 @@ Usage:
 perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]
 
 <b>[Options:]</b><br>
--situation&nbsp:&nbsp;&nbsp;The situation for input files (read-based|assembly-based|tabular)<br>
--wd&nbsp:&nbsp;&nbsp;Work directory. Ensure that the files downloaded in Step 1 and your input files be included in this directory.
--od&nbsp:&nbsp;&nbsp;Output file. This directory may or may not exist.<br>
--m&nbsp:&nbsp;&nbsp;Database searching program you plan to use (diamond|usearch|blast).<br>
--f&nbsp:&nbsp;&nbsp;Specify the extensions of your sequence files (E.g. fastq, fastq.gz, fasta, fasta.gz, fq, fq.gz, fa, fa.gz) or (faa, fna) or (diamond|usearch|blast).<br>
-   When using "-situation tablular", -f supports "diamond|usearch|blast".<br>
-   Ensure that filetype is support for the tool selected by -m option.<br>
-   (E.g., if -m usearch, the supported file types for -f are "fastq|fasta," and for "-m blast," they are "fasta|fa".)<br>
--s&nbsp:&nbsp;&nbsp;(nucl|prot) Sequence type.<br>
--tpm&nbsp:&nbsp;&nbsp;(0|1)  "1" need $sample.tpm exist in the work directory (default: 0).<br>
-"-situation assembly-based" is a prerequisite for this option.<br>
--id&nbsp:&nbsp;&nbsp;Minimum identity to report an alignment (default: 30).<br>
--e&nbsp:&nbsp;&nbsp;Maximum e-value to report alignments (default: 1e-5).<br>
--norm&nbsp:&nbsp;&nbsp;(0|1) 0: don`t need random sampling; 1: need random sampling.<br>
--rs&nbsp:&nbsp;&nbsp;The number of sequences for random subsampling. (default: the lowest number of sequences).<br>
-    Note: "-norm 1" is a prerequisite for this parameter.<br>
--thread:Number of threads (default: 2)<br>
 
-<b>Examples</b><br>
--situation read-based
+-situation  : The situation for input files (read-based|assembly-based|tabular).
+
+-wd  : Work directory. Ensure that the files downloaded in Step 1 and your input files be included in this directory.
+
+-od  : Output file. This directory may or may not exist.
+
+-m   : Database searching program you plan to use (diamond|usearch|blast).
+
+-f   : Specify the extensions of your sequence files (E.g. fastq, fastq.gz, fasta, fasta.gz, fq, fq.gz, fa, fa.gz) or (faa, fna) or (diamond|usearch|blast).
+
+      When using "-situation tablular", -f supports "diamond|usearch|blast".
+   
+      Ensure that filetype is support for the tool selected by -m option.
+   
+      (E.g., if -m usearch, the supported file types for -f are "fastq|fasta," and for "-m blast," they are "fasta|fa").
+   
+-s   : (nucl|prot) Sequence type.
+
+-tpm : (0|1)  "1" need $sample.tpm exist in the work directory (default: 0)."-situation assembly-based" is a prerequisite for this option.
+
+-id  : Minimum identity to report an alignment (default: 30).
+
+-e   : Maximum e-value to report alignments (default: 1e-5).
+
+-norm : (0|1) 0: don`t need random sampling; 1: need random sampling.
+
+-rs   : The number of sequences for random subsampling. (default: the lowest number of sequences).Note: "-norm 1" is a prerequisite for this parameter
+
+-thread : Number of threads (default: 2
+
+<b>Examples</b>
+
+<i>-situation read-based
 
 $ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output
 
