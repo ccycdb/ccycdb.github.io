@@ -30,14 +30,18 @@ BLAST table (delimited with "\t") generated through sequences similarity searchi
 $ wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1
 
 Alternatively, you can download database directly through the website or third-party download tools.
- ```
-`$ git clone https://github.com/ccycdb/CCycDB.PL`
 
-<b>Step 2. Annotation</b><br>
-Usage:
+$ git clone https://github.com/ccycdb/CCycDB.PL
+```
+
+#### Step 2. Annotation
+
+```
 perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]
+```
 
-<b>[Options:]</b><br>
+```
+<b> Options 
 
 -situation  : The situation for input files (read-based|assembly-based|tabular).
 
@@ -48,11 +52,9 @@ perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_d
 -m   : Database searching program you plan to use (diamond|usearch|blast).
 
 -f   : Specify the extensions of your sequence files (E.g. fastq, fastq.gz, fasta, fasta.gz, fq, fq.gz, fa, fa.gz) or (faa, fna) or (diamond|usearch|blast).
-
-      When using "-situation tablular", -f supports "diamond|usearch|blast".
-   
-      Ensure that filetype is support for the tool selected by -m option.
-   
+     
+      When using "-situation tablular", -f supports "diamond|usearch|blast".Ensure that filetype is support for the tool selected by -m option.
+      
       (E.g., if -m usearch, the supported file types for -f are "fastq|fasta," and for "-m blast," they are "fasta|fa").
    
 -s   : (nucl|prot) Sequence type.
@@ -68,36 +70,37 @@ perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_d
 -rs   : The number of sequences for random subsampling. (default: the lowest number of sequences).Note: "-norm 1" is a prerequisite for this parameter
 
 -thread : Number of threads (default: 2
+```
 
-<b>Examples</b>
+### Examples
 
-<i>-situation read-based
-
+<b><i>situation read-based</i></b>
+```
 $ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output
 
 $ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output
-
-Output:
+```
+<b><p> Output: </b></p>
 
 FunProfile_read-based_$method_random.txt  OR  FunProfile_read-based_$method_norandom.txt:
 
- Gene    Mean identity   SampleA    SampleB
-geneA         70                 5                 20
-geneB         80                10                12
+Gene    Mean identity   SampleA    SampleB
+geneA         70           5         20
+geneB         80           10        12
 
 SEQ2GENE/$sample.SEQ2G.txt :
 
-Query sequence                                  Gene
-k141_433371_length_91162_1            geneA
-k141_455489_length_11328_1            geneB
+Query sequence                   Gene
+k141_433371_length_91162_1      geneA
+k141_455489_length_11328_1      geneB
 
-Assembly-based
-
+<b><i>Assembly-based</i></b>
+```
 $ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -norm 0 -thread 10 -od ./output
 
 $ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output
-
-Output:
+```
+<p>Output:</b>
 
 FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt
 
@@ -107,13 +110,13 @@ ORF2GENE.tpm (If "-tpm =1" and exist "$sample.tpm")
 
  
 
-Tabular Files
-
+<b><i>Tabular Files</i></b>
+```
 $ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond  -norm 0 -thread 10 -od ./output
 
 $ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output
-
-Output:
+```
+<b>Output:</b>
 
 FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt
 
@@ -121,7 +124,7 @@ SEQ2GENE/$sample.SEQ2GENE.txt
 
  
 
-Depending on the tools used, you may want to cite also:
+<p><b>Depending on the tools used, you may want to cite also:</b></p>
 
 DIAMOND: Buchfink B, Xie C, Huson D H. Fast and sensitive protein alignment using DIAMOND[J]. Nature methods, 2015, 12(1): 59-60.
 
