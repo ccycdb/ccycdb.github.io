@@ -1,21 +1,22 @@
 # CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes
+<!-- button -->
+
 <b> Please see https://ccycdb.github.io/ for more details</b>
 
 CCycDB is a knowledge-based functional gene database for accurate metagenomic profiling of carbon cycling microbial communities. CCycDB contains 4,676 gene families within 6 categories. These gene families are further categorized into 45 sub-categories within sub-category I and 188 sub-categories within sub-category II with a total of 10,991,724 targeted sequences. A series of validations demonstrated that CCycDB outperformed large public orthology databases in terms of coverage, specificity, and accuracy, and can be used to accurately profile carbon cycling microbial communities in real metagenomic datasets.
 Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes" for more details.
 
-![NSFW Filter popup] (https://github.com/ccycdb/ccycdb.github.io/tree/main/image/FlowChart.jpg)
-
 ## Contents
 
-- [Installation](#Installation)
+- [Installation](#step-0.-prepare-your-files)
 - [Options](#Options)
 - [Examples](#Examples)
 - [Contact](#Contact)
 
-<b>Usage and Examples</b>
+### Usage and Examples
 
-<b >Step 0. Prepare your files </b><br>
+#### Step 0. Prepare your files 
+
 Input files supports 3 types
 1. Read-based
 Raw reads (clean reads) or Merged Reads (Forward and reverse reads were merged into longer sequences by the program e.g. PEAR)
@@ -24,10 +25,13 @@ Contigs generated through metagenome assmebly by (e.g., MEGAHIT, MetaSPAdes, SPA
 3. Tabular Files
 BLAST table (delimited with "\t") generated through sequences similarity searching tools (e.g., BLAST, USEARCH, DIAMOND)
 
-<b>Step 1. Download</b><br>
+#### Step 1. Download
+```
 $ wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1
- Alternatively, you can download database directly through the website or third-party download tools.
-$ git clone https://github.com/ccycdb/CCycDB.PL
+
+Alternatively, you can download database directly through the website or third-party download tools.
+ ```
+`$ git clone https://github.com/ccycdb/CCycDB.PL`
 
 <b>Step 2. Annotation</b><br>
 Usage:
