@@ -37,9 +37,7 @@ BLAST table (delimited with "\t") generated through sequences similarity searchi
 
 #### Step 1. Download
 ```
-$ wget -c https://zenodo.org/record/8324818/files/data.tar.gz?download=1
-
-Alternatively, you can download database directly through the website or third-party download tools.
+You can download database directly through https://zenodo.org/records/10045943 or third-party download tools.
 
 $ git clone https://github.com/ccycdb/CCycDB.PL
 ```
