@@ -36,17 +36,18 @@ BLAST table (delimited with "\t") generated through sequences similarity searchi
 
 
 #### Step 1. Download
-
-You can download database directly through **https://zenodo.org/records/10045943** or third-party download tools.
 ```
-$ git clone https://github.com/ccycdb/CCycDB.PL
+(1) You can download database directly through **https://zenodo.org/records/10045943** or third-party download tools.
+```
+```
+(2) $ git clone https://github.com/ccycdb/CCycdb.PL
 ```
 
 
 #### Step 2. Annotation
 
 ```
-perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]
+perl CCycdb.PL [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]
 ```
 
 ### Options
@@ -85,9 +86,9 @@ perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_d
 
 **1.read-based**
 ```
-$ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output
 
-$ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output
+$ perl CCycdb.PL -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output
 
 ```
 
@@ -111,9 +112,9 @@ k141_455489_length_11328_1      geneB
 **2.Assembly-based**
 
 ```
-$ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -norm 0 -thread 10 -od ./output
 
-$ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output
 ```
 
 &nbsp;**[output:]**
@@ -127,9 +128,9 @@ $ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fatsa -s 
 **3.Tabular Files**
 
 ```
-$ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond  -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation tabular -wd ./ -m diamond -f diamond  -norm 0 -thread 10 -od ./output
 
-$ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output
+$ perl CCycdb.PL -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output
 ```
 
 &nbsp;**[output:]**
