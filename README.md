@@ -7,7 +7,7 @@ CCycDB is a knowledge-based functional gene database for accurate metagenomic pr
 
 A series of validations demonstrated that CCycDB outperformed large public orthology databases in terms of coverage, specificity, and accuracy, and can be used to accurately profile carbon cycling microbial communities in real metagenomic datasets.
 
-Please see "CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes" for more details.
+Please see "[CCycDB: an integrative knowledgebase to fingerprint microbial carbon cycling processes](https://doi.org/10.64898/2026.01.28.702190)"  for more details.
 
 ## Contents
 
