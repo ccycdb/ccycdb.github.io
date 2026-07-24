@@ -295,7 +295,7 @@ if ($norm == 0){
  print "not random sampling ...\t";
  open(FOUT, ">$outdir/FunProfile_$situation\_$method\_norandom.txt") || die "#ERROR: cannot write profile.txt!\n";
  print FOUT "#Not random sampling\n";
- print FOUT "Gene\tMean Identity\tAnnotation\tKO\tBrenda\tCAZY\tCAZY_group\tCOG\t",join("\t", @samplelist), "\n";
+ print FOUT "Gene\tMean Identity\tAnnotation\tKO\tBrenda\tCAZY\tCAZY_group\teggNOG\t",join("\t", @samplelist), "\n";
  foreach my $gkey (sort keys %identity){
   print FOUT "$gkey";
   if ($identity{$gkey}){
@@ -320,7 +320,7 @@ if ($norm == 0){
  my %abundance_rs = &RandomSampling(\%abundance, \%size, $rs);
  open(FOUT, ">$outdir\/FunProfile_$situation\_$method\_randomTO$rs.txt") || die "#4 cannot write outfile\n";
  print FOUT "#Random sampling: $rs\n";
- print FOUT "Gene\tMean Identity\t",join("\t", @samplelist), "\n";
+ print FOUT "Gene\tMean Identity\tAnnotation\tKO\tBrenda\tCAZY\tCAZY_group\teggNOG\t",join("\t", @samplelist), "\n";
  foreach my $gkey (sort keys %abundance_rs) {
   print FOUT "$gkey\t";
   my $identity = sprintf("%.2f",sum(@{$identity{$gkey}}) / scalar(@{$identity{$gkey}}));
