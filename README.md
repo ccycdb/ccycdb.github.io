@@ -47,14 +47,16 @@ BLAST table (delimited with "\t") generated through sequences similarity searchi
 #### Step 2. Annotation
 
 ```
-perl CCycdb.PL [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]
+perl CCycdb.PL [-situation read-based|assembly-based|tabular] [-datadir datafile_path] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od output_directory]
 ```
 
 ### Options
 ```
 -situation  : The situation for input files (read-based|assembly-based|tabular).
 
--wd  : Work directory. Ensure that the files downloaded in Step 1 and your input files be included in this directory.
+-datadir: Ensure that the data directory downloaded in Step 1. (E.g.  /clusters/node1).
+
+-wd  : Work directory. Ensure that your input files be included in this directory.
 
 -od  : Output file. This directory may or may not exist.
 
@@ -86,9 +88,9 @@ perl CCycdb.PL [-situation read-based|assembly-based|tabular] [-wd work_director
 
 **1.read-based**
 ```
-$ perl CCycdb.PL -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation read-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output
 
-$ perl CCycdb.PL -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output
+$ perl CCycdb.PL -situation read-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output
 
 ```
 
@@ -96,9 +98,9 @@ $ perl CCycdb.PL -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 
 <li>FunProfile_read-based_$method_random.txt  OR  FunProfile_read-based_$method_norandom.txt:</li>
 
 ```
-Gene    Mean identity   SampleA    SampleB
-geneA         70           5         20
-geneB         80           10        12
+Gene    Mean identity   Annotation   KO    EC_number  CAZY   eggNOG  SampleA    SampleB
+geneA         70          xxx     K00000   1.1.1.1     GH    COG1234     5         20
+geneB         80          xxx     K00000   1.1.1.1     GH    COG1234     10        12
 ```
 
 <li>SEQ2GENE/$sample.SEQ2G.txt :</li>
@@ -112,9 +114,9 @@ k141_455489_length_11328_1      geneB
 **2.Assembly-based**
 
 ```
-$ perl CCycdb.PL -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation assembly-based -datadir /clusters/node1 -wd ./ -m diamond -f fatsa -s nucl -norm 0 -thread 10 -od ./output
 
-$ perl CCycdb.PL -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation assembly-based -datadir /clusters/node1 -wd ./ -m diamond -f fatsa -s nucl -tpm 1 -norm 0 -thread 10 -od ./output
 ```
 
 &nbsp;**[output:]**
@@ -128,9 +130,9 @@ $ perl CCycdb.PL -situation assembly-based -wd ./ -m diamond -f fatsa -s nucl -t
 **3.Tabular Files**
 
 ```
-$ perl CCycdb.PL -situation tabular -wd ./ -m diamond -f diamond  -norm 0 -thread 10 -od ./output
+$ perl CCycdb.PL -situation tabular -datadir /clusters/node1 -wd ./ -m diamond -f diamond  -norm 0 -thread 10 -od ./output
 
-$ perl CCycdb.PL -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output
+$ perl CCycdb.PL -situation tabular -datadir /clusters/node1 -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output
 ```
 
 &nbsp;**[output:]**
