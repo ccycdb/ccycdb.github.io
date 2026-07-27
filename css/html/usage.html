@@ -99,7 +99,7 @@ li {
 	<div>
 	<h3>Step 2. Annotation </h3>
 	<p class="text"><strong>Usage:</strong></p>
-	<p class="text">perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx] [-od xx]</p>
+	<p class="text">perl GetFun_CCycdb.pl [-situation read-based|assembly-based|tabular] [-datadir datafile_path] [-wd work_directory] [-m diamond|usearch|blast] [-f filetype] [-s seqtype] [-id] [-e] [-tpm] [-norm xx] [-rs xx] [-thread xx]</p>
 	<p class="text"><b>[Options:]</b></p>
 	</div>
 	<!-- 参数 -->
@@ -109,16 +109,17 @@ li {
 			  <tr><td class="td-left">-situation</td>
 				<td class="td-right">The situation for input files (read-based|assembly-based|tabular)</td>
 			  </tr>
-			  
-			 <tr>
-				<td class="td-left">-wd</td>
-				<td class="td-right">Work directory.  Ensure that the files downloaded in Step 1  and your input files be included in this directory.</td>
-			  </tr>
 				
 			  <tr>
-				<td class="td-left">-od</td>
-				<td class="td-right">Output file. This directory may or may not exist.</td>
+				<td class="td-left">-datadir</td>
+				<td class="td-right"> Ensure that the data directory downloaded in Step 1. (E.g.  /clusters/node1) </td>
 			  </tr>
+				
+			 <tr>
+				<td class="td-left">-wd</td>
+				<td class="td-right">Work directory.  Ensure that your input files|sequence files be included in this directory.</td>
+			  </tr>
+
 			  <tr>
 				<td class="td-left">-m<br></td>
 				<td class="td-right">Database searching program you plan to use (diamond|usearch|blast).</td>
@@ -174,28 +175,28 @@ Note: "-norm 1" is a prerequisite for this parameter.</td>
 		<li>
 		  <p style=" margin-left: 5px;"><strong> -situation read-based</strong></p>
 		</li>
-		<p>$&nbsp;perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output</p>
-		<p>$ perl GetFun_CCycdb.pl -situation read-based -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./output </p>
+		<p>$&nbsp;perl GetFun_CCycdb.pl -situation read-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10</p>
+		<p>$ perl GetFun_CCycdb.pl -situation read-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 </p>
 		<p><strong>Output: </strong></p>
 		<p>FunProfile_read-based_$method_random.txt &nbsp;OR &nbsp;FunProfile_read-based_$method_norandom.txt:</p>
-		<p class="optionbox">&nbsp;Gene &nbsp; &nbsp;Mean identity &nbsp; SampleA &nbsp; &nbsp;SampleB<br>
-		  geneA &nbsp; &nbsp; &nbsp; &nbsp; 70 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20 <br>
-		  geneB &nbsp; &nbsp; &nbsp; &nbsp; 80 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12</p>
+		<p class="optionbox">&nbsp;Gene &nbsp; &nbsp;Mean identity &nbsp;Annotation &nbsp; KO  &nbsp; &nbsp;EC_number  &nbsp;CAZY &nbsp;CAZY_group &nbsp;eggNOG &nbsp;SampleA &nbsp; &nbsp;SampleB<br>
+		  geneA &nbsp; &nbsp; &nbsp; &nbsp; 70 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xxx &nbsp; &nbsp; &nbsp; &nbsp; K00000(geneA)&nbsp;&nbsp;1.1.1.1&nbsp;&nbsp;GH&nbsp;&nbsp;GH1_2 &nbsp;&nbsp; COG1234&nbsp;&nbsp;5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20 <br>
+		  geneB &nbsp; &nbsp; &nbsp; &nbsp; 80 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xxx &nbsp; &nbsp; &nbsp; &nbsp; K00000(geneA)&nbsp;&nbsp;1.1.1.1&nbsp;&nbsp;GH&nbsp;&nbsp;GH1_2 &nbsp;&nbsp; COG1234&nbsp;&nbsp;10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12</p>
 		<p>SEQ2GENE/$sample.SEQ2G.txt : </p>
 		<p class="optionbox"> Query sequence &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gene <br>
 		  k141_433371_length_91162_1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;geneA<br>
 		  k141_455489_length_11328_1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;geneB</p>
 		<li><p style=" margin-left: 5px;"><b>Assembly-based</b></p></li>
-		<p>$&nbsp;perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./output</p>
-		<p>$ perl GetFun_CCycdb.pl -situation assembly-based -wd ./ -m diamond -f fasta -s nucl -tpm 1 -norm 0 -thread 10 -od ./output </p>
+		<p>$&nbsp;perl GetFun_CCycdb.pl -situation assembly-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 </p>
+		<p>$ perl GetFun_CCycdb.pl -situation assembly-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -tpm 1 -norm 0 -thread 10 </p>
 		<p><strong>Output: </strong></p>
 		<p>FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt </p>
 		<p>ORF2GENE/$sample.ORF2GENE.txt</p>
 		<p>ORF2GENE.tpm (If "-tpm =1" and exist "$sample.tpm")</p>
 		<p>&nbsp;</p>
 		<li><p style=" margin-left: 5px;"><b>Tabular Files</b></p></li>
-		<p>$&nbsp;perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond &nbsp;-norm 0 -thread 10 -od ./output</p>
-		<p>$ perl GetFun_CCycdb.pl -situation tabular -wd ./ -m diamond -f diamond -norm 1 -thread 10 -od ./output </p>
+		<p>$&nbsp;perl GetFun_CCycdb.pl -situation tabular -datadir /clusters/node1 -wd ./ -m diamond -f diamond &nbsp;-norm 0 -thread 10</p>
+		<p>$ perl GetFun_CCycdb.pl -situation tabular -datadir /clusters/node1 -wd ./ -m diamond -f diamond -norm 1 -thread 10</p>
 		<p><strong>Output: </strong></p>
 		<p>FunProfile_read-based_$method_random.txt OR FunProfile_read-based_$method_norandom.txt </p>
 		<p>SEQ2GENE/$sample.SEQ2GENE.txt</p>
