@@ -184,11 +184,13 @@ Note: "-norm 1" is a prerequisite for this parameter.</td>
 		<p>$&nbsp;perl GetFun_CCycdb.pl -situation read-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 0 -thread 10 -od ./result </p>
 		<p>$ perl GetFun_CCycdb.pl -situation read-based -datadir /clusters/node1 -wd ./ -m diamond -f fasta -s nucl -norm 1 -rs 10000000 -thread 10 -od ./result </p>
 		<p><strong>Input: </strong></p>
-		<p>(option：-datadir) /clusters/node1 </p>	
-		<p class="optionbox">
+		<p>/clusters/node1 (option：-datadir) </p>	
+			<p class="optionbox">
 			data<br>
-		<p>(option：-wd) ./ </p>
+		<p> ./ (option：-wd)</p>
+			<p class="optionbox">
 			sample1.fasta<br>sample2.fasta<br>sample3.fasta<br>...<br>
+				
 		<p><strong>Output: </strong></p>
 		<p>FunProfile_read-based_$method_random.txt &nbsp;OR &nbsp;FunProfile_read-based_$method_norandom.txt:</p>
 		<p class="optionbox">Gene &nbsp; &nbsp;Mean identity &nbsp;Annotation &emsp; KO  &emsp;&emsp; EC_number &emsp;CAZY &nbsp; eggNOG &nbsp; SampleA &nbsp; &nbsp;SampleB<br>
