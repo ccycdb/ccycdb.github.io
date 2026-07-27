@@ -54,7 +54,7 @@ perl CCycdb.PL [-situation read-based|assembly-based|tabular] [-datadir datafile
 ```
 -situation  : The situation for input files (read-based|assembly-based|tabular).
 
--datadir: Ensure that the data directory downloaded in Step 1. (E.g.  /clusters/node1).
+-datadir: Ensure that the <data> directory downloaded in Step 1. (E.g.  /clusters/node1).
 
 -wd  : Work directory. Ensure that your input files be included in this directory.
 
